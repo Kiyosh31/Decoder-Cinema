@@ -1,0 +1,12 @@
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.exe.config
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.exe
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.pdb
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.csprojResolveAssemblyReference.cache
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.LogIn.resources
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.Properties.Resources.resources
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.csproj.GenerateResource.Cache
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.exe
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.pdb
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.dll
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.xml
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.Menu.resources
