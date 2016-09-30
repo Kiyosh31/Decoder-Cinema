@@ -10,3 +10,6 @@ C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decod
 C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.dll
 C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.xml
 C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\Proyecto Final\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.Menu.resources
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\DecoderCinema\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.exe.config
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.exe
+C:\Users\david\Google Drive\CUCEI\Semestre 4\Bases de datos\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.pdb
