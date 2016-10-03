@@ -11,6 +11,7 @@ namespace Decoder_Cinema
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// Creando nueva Rama para la interfaz Gráfica
         [STAThread]
         static void Main()
         {
