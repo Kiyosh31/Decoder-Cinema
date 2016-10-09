@@ -86,5 +86,10 @@ namespace Decoder_Cinema
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
