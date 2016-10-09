@@ -35,13 +35,14 @@
             this.passLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // userTextBox
             // 
-            this.userTextBox.Location = new System.Drawing.Point(337, 129);
+            this.userTextBox.Location = new System.Drawing.Point(337, 91);
             this.userTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(167, 20);
@@ -50,7 +51,7 @@
             // 
             // passTextBox
             // 
-            this.passTextBox.Location = new System.Drawing.Point(337, 167);
+            this.passTextBox.Location = new System.Drawing.Point(337, 129);
             this.passTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.PasswordChar = '*';
@@ -60,7 +61,7 @@
             // 
             // logInButton
             // 
-            this.logInButton.Location = new System.Drawing.Point(233, 208);
+            this.logInButton.Location = new System.Drawing.Point(233, 170);
             this.logInButton.Margin = new System.Windows.Forms.Padding(2);
             this.logInButton.Name = "logInButton";
             this.logInButton.Size = new System.Drawing.Size(271, 29);
@@ -74,7 +75,7 @@
             this.idLabel.AutoSize = true;
             this.idLabel.BackColor = System.Drawing.Color.Transparent;
             this.idLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.idLabel.Location = new System.Drawing.Point(214, 132);
+            this.idLabel.Location = new System.Drawing.Point(214, 94);
             this.idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(94, 13);
@@ -86,7 +87,7 @@
             this.passLabel.AutoSize = true;
             this.passLabel.BackColor = System.Drawing.Color.Transparent;
             this.passLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.passLabel.Location = new System.Drawing.Point(247, 170);
+            this.passLabel.Location = new System.Drawing.Point(247, 132);
             this.passLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passLabel.Name = "passLabel";
             this.passLabel.Size = new System.Drawing.Size(61, 13);
@@ -115,12 +116,24 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(296, 220);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(145, 29);
+            this.buttonExit.TabIndex = 9;
+            this.buttonExit.Text = "Salir";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Decoder_Cinema.Properties.Resources.BackGroundDecoderCinema1;
             this.ClientSize = new System.Drawing.Size(526, 260);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.passLabel);
@@ -128,6 +141,7 @@
             this.Controls.Add(this.logInButton);
             this.Controls.Add(this.passTextBox);
             this.Controls.Add(this.userTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -147,6 +161,7 @@
         private System.Windows.Forms.Label passLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 
