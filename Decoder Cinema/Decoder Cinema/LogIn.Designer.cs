@@ -47,6 +47,7 @@
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(167, 20);
             this.userTextBox.TabIndex = 1;
+            this.userTextBox.UseWaitCursor = true;
             this.userTextBox.TextChanged += new System.EventHandler(this.userTextBox_TextChanged);
             // 
             // passTextBox
@@ -57,6 +58,7 @@
             this.passTextBox.PasswordChar = '*';
             this.passTextBox.Size = new System.Drawing.Size(167, 20);
             this.passTextBox.TabIndex = 2;
+            this.passTextBox.UseWaitCursor = true;
             this.passTextBox.TextChanged += new System.EventHandler(this.passTextBox_TextChanged);
             // 
             // logInButton
@@ -68,6 +70,7 @@
             this.logInButton.TabIndex = 3;
             this.logInButton.Text = "LogIn";
             this.logInButton.UseVisualStyleBackColor = true;
+            this.logInButton.UseWaitCursor = true;
             this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
             // 
             // idLabel
@@ -81,6 +84,7 @@
             this.idLabel.Size = new System.Drawing.Size(94, 13);
             this.idLabel.TabIndex = 5;
             this.idLabel.Text = "Numero Empleado";
+            this.idLabel.UseWaitCursor = true;
             // 
             // passLabel
             // 
@@ -93,6 +97,7 @@
             this.passLabel.Size = new System.Drawing.Size(61, 13);
             this.passLabel.TabIndex = 6;
             this.passLabel.Text = "Contraseña";
+            this.passLabel.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -104,6 +109,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -115,6 +121,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.UseWaitCursor = true;
             // 
             // buttonExit
             // 
@@ -125,6 +132,7 @@
             this.buttonExit.TabIndex = 9;
             this.buttonExit.Text = "Salir";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseWaitCursor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // LogIn
@@ -141,9 +149,10 @@
             this.Controls.Add(this.logInButton);
             this.Controls.Add(this.passTextBox);
             this.Controls.Add(this.userTextBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de Sesion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
