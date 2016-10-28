@@ -10,3 +10,15 @@ C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.csprojResolveAssemblyReference.cache
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminMenu.resources
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.FormLogin.resources
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.exe.config
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.exe
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.pdb
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.csprojResolveAssemblyReference.cache
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.FormLogin.resources
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminMenu.resources
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.Properties.Resources.resources
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder Cinema.csproj.GenerateResource.Cache
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.exe
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\Decoder Cinema.pdb
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.dll
+C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.xml

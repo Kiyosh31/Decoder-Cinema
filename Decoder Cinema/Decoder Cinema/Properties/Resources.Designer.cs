@@ -83,16 +83,6 @@ namespace Decoder_Cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dark_blue_powerpoint_background_wallpaper_hd_06813 {
-            get {
-                object obj = ResourceManager.GetObject("dark-blue-powerpoint-background-wallpaper-hd-06813", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Logo_Decoder {
             get {
                 object obj = ResourceManager.GetObject("Logo Decoder", resourceCulture);

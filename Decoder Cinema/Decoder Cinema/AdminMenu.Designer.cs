@@ -31,7 +31,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonBuyTicket = new System.Windows.Forms.Button();
             this.groupBoxMovieMenu = new System.Windows.Forms.GroupBox();
+            this.buttonModifyMovie = new System.Windows.Forms.Button();
+            this.buttonDeleteMovie = new System.Windows.Forms.Button();
+            this.buttonSearchMovie = new System.Windows.Forms.Button();
+            this.labelIDMovie = new System.Windows.Forms.Label();
+            this.textBoxIDMovie = new System.Windows.Forms.TextBox();
             this.groupBoxAddMovie = new System.Windows.Forms.GroupBox();
+            this.textBoxIDM = new System.Windows.Forms.TextBox();
+            this.labelIDM = new System.Windows.Forms.Label();
             this.buttonAddMovie = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxClassification = new System.Windows.Forms.ComboBox();
@@ -47,6 +54,8 @@
             this.labelIDEmployee = new System.Windows.Forms.Label();
             this.textBoxIDEmployee = new System.Windows.Forms.TextBox();
             this.groupBoxAddEmployee = new System.Windows.Forms.GroupBox();
+            this.textBoxIDE = new System.Windows.Forms.TextBox();
+            this.labelIDE = new System.Windows.Forms.Label();
             this.comboBoxJobTitle = new System.Windows.Forms.ComboBox();
             this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -59,15 +68,6 @@
             this.buttonAddClientAccount = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonFunctions = new System.Windows.Forms.Button();
-            this.labelIDE = new System.Windows.Forms.Label();
-            this.textBoxIDE = new System.Windows.Forms.TextBox();
-            this.textBoxIDM = new System.Windows.Forms.TextBox();
-            this.labelIDM = new System.Windows.Forms.Label();
-            this.buttonModifyMovie = new System.Windows.Forms.Button();
-            this.buttonDeleteMovie = new System.Windows.Forms.Button();
-            this.buttonSearchMovie = new System.Windows.Forms.Button();
-            this.labelIDMovie = new System.Windows.Forms.Label();
-            this.textBoxIDMovie = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxMovieMenu.SuspendLayout();
             this.groupBoxAddMovie.SuspendLayout();
@@ -114,6 +114,58 @@
             this.groupBoxMovieMenu.TabStop = false;
             this.groupBoxMovieMenu.Text = "Menu Peliculas";
             // 
+            // buttonModifyMovie
+            // 
+            this.buttonModifyMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifyMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonModifyMovie.Location = new System.Drawing.Point(184, 346);
+            this.buttonModifyMovie.Name = "buttonModifyMovie";
+            this.buttonModifyMovie.Size = new System.Drawing.Size(99, 27);
+            this.buttonModifyMovie.TabIndex = 17;
+            this.buttonModifyMovie.Text = "Modificar";
+            this.buttonModifyMovie.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteMovie
+            // 
+            this.buttonDeleteMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonDeleteMovie.Location = new System.Drawing.Point(19, 346);
+            this.buttonDeleteMovie.Name = "buttonDeleteMovie";
+            this.buttonDeleteMovie.Size = new System.Drawing.Size(99, 27);
+            this.buttonDeleteMovie.TabIndex = 16;
+            this.buttonDeleteMovie.Text = "Eliminar";
+            this.buttonDeleteMovie.UseVisualStyleBackColor = true;
+            // 
+            // buttonSearchMovie
+            // 
+            this.buttonSearchMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearchMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonSearchMovie.Location = new System.Drawing.Point(103, 310);
+            this.buttonSearchMovie.Name = "buttonSearchMovie";
+            this.buttonSearchMovie.Size = new System.Drawing.Size(99, 27);
+            this.buttonSearchMovie.TabIndex = 13;
+            this.buttonSearchMovie.Text = "Consultar";
+            this.buttonSearchMovie.UseVisualStyleBackColor = true;
+            // 
+            // labelIDMovie
+            // 
+            this.labelIDMovie.AutoSize = true;
+            this.labelIDMovie.BackColor = System.Drawing.Color.Transparent;
+            this.labelIDMovie.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelIDMovie.Location = new System.Drawing.Point(56, 288);
+            this.labelIDMovie.Name = "labelIDMovie";
+            this.labelIDMovie.Size = new System.Drawing.Size(66, 12);
+            this.labelIDMovie.TabIndex = 14;
+            this.labelIDMovie.Text = "ID Pelicula:";
+            // 
+            // textBoxIDMovie
+            // 
+            this.textBoxIDMovie.Location = new System.Drawing.Point(139, 284);
+            this.textBoxIDMovie.Name = "textBoxIDMovie";
+            this.textBoxIDMovie.Size = new System.Drawing.Size(91, 20);
+            this.textBoxIDMovie.TabIndex = 15;
+            // 
             // groupBoxAddMovie
             // 
             this.groupBoxAddMovie.Controls.Add(this.textBoxIDM);
@@ -132,6 +184,25 @@
             this.groupBoxAddMovie.TabIndex = 9;
             this.groupBoxAddMovie.TabStop = false;
             this.groupBoxAddMovie.Text = "Registrar";
+            // 
+            // textBoxIDM
+            // 
+            this.textBoxIDM.Location = new System.Drawing.Point(106, 24);
+            this.textBoxIDM.Name = "textBoxIDM";
+            this.textBoxIDM.Size = new System.Drawing.Size(81, 20);
+            this.textBoxIDM.TabIndex = 18;
+            // 
+            // labelIDM
+            // 
+            this.labelIDM.AutoSize = true;
+            this.labelIDM.BackColor = System.Drawing.Color.Transparent;
+            this.labelIDM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelIDM.Location = new System.Drawing.Point(81, 27);
+            this.labelIDM.Name = "labelIDM";
+            this.labelIDM.Size = new System.Drawing.Size(19, 12);
+            this.labelIDM.TabIndex = 17;
+            this.labelIDM.Text = "ID:";
             // 
             // buttonAddMovie
             // 
@@ -306,6 +377,25 @@
             this.groupBoxAddEmployee.TabStop = false;
             this.groupBoxAddEmployee.Text = "Registrar";
             // 
+            // textBoxIDE
+            // 
+            this.textBoxIDE.Location = new System.Drawing.Point(92, 25);
+            this.textBoxIDE.Name = "textBoxIDE";
+            this.textBoxIDE.Size = new System.Drawing.Size(81, 20);
+            this.textBoxIDE.TabIndex = 16;
+            // 
+            // labelIDE
+            // 
+            this.labelIDE.AutoSize = true;
+            this.labelIDE.BackColor = System.Drawing.Color.Transparent;
+            this.labelIDE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelIDE.Location = new System.Drawing.Point(67, 28);
+            this.labelIDE.Name = "labelIDE";
+            this.labelIDE.Size = new System.Drawing.Size(19, 12);
+            this.labelIDE.TabIndex = 15;
+            this.labelIDE.Text = "ID:";
+            // 
             // comboBoxJobTitle
             // 
             this.comboBoxJobTitle.FormattingEnabled = true;
@@ -425,97 +515,7 @@
             this.buttonFunctions.Text = "Administrar\r\nFunciones\r\n";
             this.buttonFunctions.UseVisualStyleBackColor = true;
             // 
-            // labelIDE
-            // 
-            this.labelIDE.AutoSize = true;
-            this.labelIDE.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDE.Location = new System.Drawing.Point(67, 28);
-            this.labelIDE.Name = "labelIDE";
-            this.labelIDE.Size = new System.Drawing.Size(19, 12);
-            this.labelIDE.TabIndex = 15;
-            this.labelIDE.Text = "ID:";
-            // 
-            // textBoxIDE
-            // 
-            this.textBoxIDE.Location = new System.Drawing.Point(92, 25);
-            this.textBoxIDE.Name = "textBoxIDE";
-            this.textBoxIDE.Size = new System.Drawing.Size(81, 20);
-            this.textBoxIDE.TabIndex = 16;
-            // 
-            // textBoxIDM
-            // 
-            this.textBoxIDM.Location = new System.Drawing.Point(106, 24);
-            this.textBoxIDM.Name = "textBoxIDM";
-            this.textBoxIDM.Size = new System.Drawing.Size(81, 20);
-            this.textBoxIDM.TabIndex = 18;
-            // 
-            // labelIDM
-            // 
-            this.labelIDM.AutoSize = true;
-            this.labelIDM.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDM.Location = new System.Drawing.Point(81, 27);
-            this.labelIDM.Name = "labelIDM";
-            this.labelIDM.Size = new System.Drawing.Size(19, 12);
-            this.labelIDM.TabIndex = 17;
-            this.labelIDM.Text = "ID:";
-            // 
-            // buttonModifyMovie
-            // 
-            this.buttonModifyMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModifyMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonModifyMovie.Location = new System.Drawing.Point(184, 346);
-            this.buttonModifyMovie.Name = "buttonModifyMovie";
-            this.buttonModifyMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonModifyMovie.TabIndex = 17;
-            this.buttonModifyMovie.Text = "Modificar";
-            this.buttonModifyMovie.UseVisualStyleBackColor = true;
-            // 
-            // buttonDeleteMovie
-            // 
-            this.buttonDeleteMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonDeleteMovie.Location = new System.Drawing.Point(19, 346);
-            this.buttonDeleteMovie.Name = "buttonDeleteMovie";
-            this.buttonDeleteMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonDeleteMovie.TabIndex = 16;
-            this.buttonDeleteMovie.Text = "Eliminar";
-            this.buttonDeleteMovie.UseVisualStyleBackColor = true;
-            // 
-            // buttonSearchMovie
-            // 
-            this.buttonSearchMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearchMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonSearchMovie.Location = new System.Drawing.Point(103, 310);
-            this.buttonSearchMovie.Name = "buttonSearchMovie";
-            this.buttonSearchMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonSearchMovie.TabIndex = 13;
-            this.buttonSearchMovie.Text = "Consultar";
-            this.buttonSearchMovie.UseVisualStyleBackColor = true;
-            // 
-            // labelIDMovie
-            // 
-            this.labelIDMovie.AutoSize = true;
-            this.labelIDMovie.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDMovie.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDMovie.Location = new System.Drawing.Point(56, 288);
-            this.labelIDMovie.Name = "labelIDMovie";
-            this.labelIDMovie.Size = new System.Drawing.Size(66, 12);
-            this.labelIDMovie.TabIndex = 14;
-            this.labelIDMovie.Text = "ID Pelicula:";
-            // 
-            // textBoxIDMovie
-            // 
-            this.textBoxIDMovie.Location = new System.Drawing.Point(139, 284);
-            this.textBoxIDMovie.Name = "textBoxIDMovie";
-            this.textBoxIDMovie.Size = new System.Drawing.Size(91, 20);
-            this.textBoxIDMovie.TabIndex = 15;
-            // 
-            // Menu
+            // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -531,7 +531,8 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Menu";
+            this.Name = "AdminMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Decoder Cinema Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxMovieMenu.ResumeLayout(false);
