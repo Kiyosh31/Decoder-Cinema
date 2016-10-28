@@ -8,88 +8,74 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using MySql.Data;
 
 namespace Decoder_Cinema
 {
-    public partial class LogIn : Form
+    public partial class FormLogin : Form
     {
-        public LogIn()
+        Class.Connection Connection = new Class.Connection();
+
+        public FormLogin()
         {
             InitializeComponent();
 
-            logInButton.Enabled = false;
+            buttonLogIn.Enabled = false;
         }
 
-        private void userTextBox_TextChanged(object sender, EventArgs e)
+        private void textBoxUserName_TextChanged(object sender, EventArgs e)
         {
-            if(userTextBox.Text == "")
+            if (textBoxUserName.Text == "")
             {
-                logInButton.Enabled = false;
+                buttonLogIn.Enabled = false;
             }
-            else if(passTextBox.Text != "")
+            else if (textBoxPassword.Text != "")
             {
-                logInButton.Enabled = true;
-            }
-        }
-
-        private void passTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (passTextBox.Text == "")
-            {
-                logInButton.Enabled = false;
-            }
-            else if (userTextBox.Text != "")
-            {
-                logInButton.Enabled = true;
+                buttonLogIn.Enabled = true;
             }
         }
 
-        private void logInButton_Click(object sender, EventArgs e)
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
-            try
+            if (textBoxPassword.Text == "")
             {
-                string myConnection = "datasource = localhost; port = 3306; username = root; password = terminusman";
-                MySqlConnection conectDB = new MySqlConnection(myConnection);
+                buttonLogIn.Enabled = false;
+            }
+            else if (textBoxUserName.Text != "")
+            {
+                buttonLogIn.Enabled = true;
+            }
+        }
 
-                MySqlCommand selectedCommand = new MySqlCommand("Select * from decodercinema.employee where idEmployee = '" + this.userTextBox.Text + "'and passwordEmployee = '" + this.passTextBox.Text + "' ;", conectDB);
+        private void buttonExit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-                MySqlDataReader myReader;
-                conectDB.Open();
-                myReader = selectedCommand.ExecuteReader();
-
-                int count = 0;
-
-                while(myReader.Read())
+        private void buttonLogIn_Click(object sender, EventArgs e)
+        {
+            Connection.OpenConnection();
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * from employee WHERE idEmployee = '{0}' AND ePassword = '{1}'", textBoxUserName.Text, textBoxPassword.Text), Connection.myConnection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                if (reader.GetString(3) == "Director")
                 {
-                    count++;
-                }
-
-                if(count == 1)
-                {
-                    //Si el usuario y contraseña son correctos se instancia la nueva ventana.
-                    Menu windowMenu = new Menu();
-                    windowMenu.ShowDialog();
-                }
-                else if(count > 1)
-                {
-                    MessageBox.Show("Id o Contraseña Duplicadas.");
+                    AdminMenu adminmenu = new AdminMenu();
+                    Connection.CloseConnection();
+                    adminmenu.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Id o Contraseña Incorrectos.");
+                    MessageBox.Show("Sesion iniciada como cajero");
+                    Connection.CloseConnection();
                 }
-                conectDB.Close();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("ID o Contraseña Incorrectos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
 
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            Connection.CloseConnection();
         }
     }
 }
