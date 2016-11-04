@@ -29,250 +29,72 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonBuyTicket = new System.Windows.Forms.Button();
-            this.groupBoxMovieMenu = new System.Windows.Forms.GroupBox();
-            this.buttonModifyMovie = new System.Windows.Forms.Button();
-            this.buttonDeleteMovie = new System.Windows.Forms.Button();
-            this.buttonSearchMovie = new System.Windows.Forms.Button();
-            this.labelIDMovie = new System.Windows.Forms.Label();
-            this.textBoxIDMovie = new System.Windows.Forms.TextBox();
-            this.groupBoxAddMovie = new System.Windows.Forms.GroupBox();
-            this.textBoxIDM = new System.Windows.Forms.TextBox();
-            this.labelIDM = new System.Windows.Forms.Label();
-            this.buttonAddMovie = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxClassification = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxMovieName = new System.Windows.Forms.TextBox();
-            this.labelMovieTitle = new System.Windows.Forms.Label();
-            this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.buttonSellTicket = new System.Windows.Forms.Button();
             this.labelUser = new System.Windows.Forms.Label();
-            this.groupBoxEmployeeMenu = new System.Windows.Forms.GroupBox();
+            this.groupBoxEmployee = new System.Windows.Forms.GroupBox();
+            this.buttonAdminEmployee = new System.Windows.Forms.Button();
+            this.buttonAddEmployee = new System.Windows.Forms.Button();
             this.buttonModifyEmployee = new System.Windows.Forms.Button();
             this.buttonDeleteEmployee = new System.Windows.Forms.Button();
-            this.buttonSearchEmployee = new System.Windows.Forms.Button();
             this.labelIDEmployee = new System.Windows.Forms.Label();
             this.textBoxIDEmployee = new System.Windows.Forms.TextBox();
-            this.groupBoxAddEmployee = new System.Windows.Forms.GroupBox();
-            this.textBoxIDE = new System.Windows.Forms.TextBox();
-            this.labelIDE = new System.Windows.Forms.Label();
-            this.comboBoxJobTitle = new System.Windows.Forms.ComboBox();
-            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.textBoxUserName = new System.Windows.Forms.TextBox();
-            this.labelConfirmPassword = new System.Windows.Forms.Label();
-            this.labelJobTitle = new System.Windows.Forms.Label();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.labelUserName = new System.Windows.Forms.Label();
-            this.buttonAddEmployee = new System.Windows.Forms.Button();
-            this.buttonAddClientAccount = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.buttonFunctions = new System.Windows.Forms.Button();
+            this.groupBoxCustomer = new System.Windows.Forms.GroupBox();
+            this.buttonAdminCostumer = new System.Windows.Forms.Button();
+            this.buttonAddCustomer = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBoxRoom = new System.Windows.Forms.GroupBox();
+            this.buttonAdminRoom = new System.Windows.Forms.Button();
+            this.buttonAddRoom = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.groupBoxMovie = new System.Windows.Forms.GroupBox();
+            this.buttonAdminMovie = new System.Windows.Forms.Button();
+            this.buttonAddMovie = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBoxScreening = new System.Windows.Forms.GroupBox();
+            this.buttonAdminScreening = new System.Windows.Forms.Button();
+            this.buttonAddScreening = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxMovieMenu.SuspendLayout();
-            this.groupBoxAddMovie.SuspendLayout();
-            this.groupBoxEmployeeMenu.SuspendLayout();
-            this.groupBoxAddEmployee.SuspendLayout();
+            this.groupBoxEmployee.SuspendLayout();
+            this.groupBoxCustomer.SuspendLayout();
+            this.groupBoxRoom.SuspendLayout();
+            this.groupBoxMovie.SuspendLayout();
+            this.groupBoxScreening.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Decoder_Cinema.Properties.Resources.Logo_Decoder;
-            this.pictureBox1.Location = new System.Drawing.Point(184, -14);
+            this.pictureBox1.Location = new System.Drawing.Point(195, -13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(507, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonBuyTicket
+            // buttonSellTicket
             // 
-            this.buttonBuyTicket.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuyTicket.Location = new System.Drawing.Point(24, 144);
-            this.buttonBuyTicket.Name = "buttonBuyTicket";
-            this.buttonBuyTicket.Size = new System.Drawing.Size(168, 62);
-            this.buttonBuyTicket.TabIndex = 1;
-            this.buttonBuyTicket.Text = "Comprar un boleto";
-            this.buttonBuyTicket.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxMovieMenu
-            // 
-            this.groupBoxMovieMenu.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxMovieMenu.Controls.Add(this.buttonModifyMovie);
-            this.groupBoxMovieMenu.Controls.Add(this.buttonDeleteMovie);
-            this.groupBoxMovieMenu.Controls.Add(this.buttonSearchMovie);
-            this.groupBoxMovieMenu.Controls.Add(this.labelIDMovie);
-            this.groupBoxMovieMenu.Controls.Add(this.textBoxIDMovie);
-            this.groupBoxMovieMenu.Controls.Add(this.groupBoxAddMovie);
-            this.groupBoxMovieMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxMovieMenu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxMovieMenu.Location = new System.Drawing.Point(576, 91);
-            this.groupBoxMovieMenu.Name = "groupBoxMovieMenu";
-            this.groupBoxMovieMenu.Size = new System.Drawing.Size(302, 383);
-            this.groupBoxMovieMenu.TabIndex = 3;
-            this.groupBoxMovieMenu.TabStop = false;
-            this.groupBoxMovieMenu.Text = "Menu Peliculas";
-            // 
-            // buttonModifyMovie
-            // 
-            this.buttonModifyMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModifyMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonModifyMovie.Location = new System.Drawing.Point(184, 346);
-            this.buttonModifyMovie.Name = "buttonModifyMovie";
-            this.buttonModifyMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonModifyMovie.TabIndex = 17;
-            this.buttonModifyMovie.Text = "Modificar";
-            this.buttonModifyMovie.UseVisualStyleBackColor = true;
-            // 
-            // buttonDeleteMovie
-            // 
-            this.buttonDeleteMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonDeleteMovie.Location = new System.Drawing.Point(19, 346);
-            this.buttonDeleteMovie.Name = "buttonDeleteMovie";
-            this.buttonDeleteMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonDeleteMovie.TabIndex = 16;
-            this.buttonDeleteMovie.Text = "Eliminar";
-            this.buttonDeleteMovie.UseVisualStyleBackColor = true;
-            // 
-            // buttonSearchMovie
-            // 
-            this.buttonSearchMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearchMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonSearchMovie.Location = new System.Drawing.Point(103, 310);
-            this.buttonSearchMovie.Name = "buttonSearchMovie";
-            this.buttonSearchMovie.Size = new System.Drawing.Size(99, 27);
-            this.buttonSearchMovie.TabIndex = 13;
-            this.buttonSearchMovie.Text = "Consultar";
-            this.buttonSearchMovie.UseVisualStyleBackColor = true;
-            // 
-            // labelIDMovie
-            // 
-            this.labelIDMovie.AutoSize = true;
-            this.labelIDMovie.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDMovie.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDMovie.Location = new System.Drawing.Point(56, 288);
-            this.labelIDMovie.Name = "labelIDMovie";
-            this.labelIDMovie.Size = new System.Drawing.Size(66, 12);
-            this.labelIDMovie.TabIndex = 14;
-            this.labelIDMovie.Text = "ID Pelicula:";
-            // 
-            // textBoxIDMovie
-            // 
-            this.textBoxIDMovie.Location = new System.Drawing.Point(139, 284);
-            this.textBoxIDMovie.Name = "textBoxIDMovie";
-            this.textBoxIDMovie.Size = new System.Drawing.Size(91, 20);
-            this.textBoxIDMovie.TabIndex = 15;
-            // 
-            // groupBoxAddMovie
-            // 
-            this.groupBoxAddMovie.Controls.Add(this.textBoxIDM);
-            this.groupBoxAddMovie.Controls.Add(this.labelIDM);
-            this.groupBoxAddMovie.Controls.Add(this.buttonAddMovie);
-            this.groupBoxAddMovie.Controls.Add(this.label2);
-            this.groupBoxAddMovie.Controls.Add(this.comboBoxClassification);
-            this.groupBoxAddMovie.Controls.Add(this.label1);
-            this.groupBoxAddMovie.Controls.Add(this.textBoxMovieName);
-            this.groupBoxAddMovie.Controls.Add(this.labelMovieTitle);
-            this.groupBoxAddMovie.Controls.Add(this.comboBoxGender);
-            this.groupBoxAddMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxAddMovie.Location = new System.Drawing.Point(19, 29);
-            this.groupBoxAddMovie.Name = "groupBoxAddMovie";
-            this.groupBoxAddMovie.Size = new System.Drawing.Size(264, 204);
-            this.groupBoxAddMovie.TabIndex = 9;
-            this.groupBoxAddMovie.TabStop = false;
-            this.groupBoxAddMovie.Text = "Registrar";
-            // 
-            // textBoxIDM
-            // 
-            this.textBoxIDM.Location = new System.Drawing.Point(106, 24);
-            this.textBoxIDM.Name = "textBoxIDM";
-            this.textBoxIDM.Size = new System.Drawing.Size(81, 20);
-            this.textBoxIDM.TabIndex = 18;
-            // 
-            // labelIDM
-            // 
-            this.labelIDM.AutoSize = true;
-            this.labelIDM.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDM.Location = new System.Drawing.Point(81, 27);
-            this.labelIDM.Name = "labelIDM";
-            this.labelIDM.Size = new System.Drawing.Size(19, 12);
-            this.labelIDM.TabIndex = 17;
-            this.labelIDM.Text = "ID:";
-            // 
-            // buttonAddMovie
-            // 
-            this.buttonAddMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonAddMovie.Location = new System.Drawing.Point(67, 165);
-            this.buttonAddMovie.Name = "buttonAddMovie";
-            this.buttonAddMovie.Size = new System.Drawing.Size(169, 23);
-            this.buttonAddMovie.TabIndex = 8;
-            this.buttonAddMovie.Text = "Registrar Nueva Pelicula";
-            this.buttonAddMovie.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(16, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 12);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Clasificación:";
-            // 
-            // comboBoxClassification
-            // 
-            this.comboBoxClassification.FormattingEnabled = true;
-            this.comboBoxClassification.Location = new System.Drawing.Point(115, 136);
-            this.comboBoxClassification.Name = "comboBoxClassification";
-            this.comboBoxClassification.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxClassification.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(14, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 12);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Genero:";
-            // 
-            // textBoxMovieName
-            // 
-            this.textBoxMovieName.Location = new System.Drawing.Point(115, 66);
-            this.textBoxMovieName.Name = "textBoxMovieName";
-            this.textBoxMovieName.Size = new System.Drawing.Size(121, 20);
-            this.textBoxMovieName.TabIndex = 0;
-            // 
-            // labelMovieTitle
-            // 
-            this.labelMovieTitle.AutoSize = true;
-            this.labelMovieTitle.BackColor = System.Drawing.Color.Transparent;
-            this.labelMovieTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMovieTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelMovieTitle.Location = new System.Drawing.Point(14, 71);
-            this.labelMovieTitle.Name = "labelMovieTitle";
-            this.labelMovieTitle.Size = new System.Drawing.Size(39, 12);
-            this.labelMovieTitle.TabIndex = 5;
-            this.labelMovieTitle.Text = "Título:";
-            // 
-            // comboBoxGender
-            // 
-            this.comboBoxGender.FormattingEnabled = true;
-            this.comboBoxGender.Location = new System.Drawing.Point(115, 101);
-            this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxGender.TabIndex = 1;
+            this.buttonSellTicket.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSellTicket.Location = new System.Drawing.Point(53, 166);
+            this.buttonSellTicket.Name = "buttonSellTicket";
+            this.buttonSellTicket.Size = new System.Drawing.Size(168, 62);
+            this.buttonSellTicket.TabIndex = 1;
+            this.buttonSellTicket.Text = "Venta de boletos";
+            this.buttonSellTicket.UseVisualStyleBackColor = true;
             // 
             // labelUser
             // 
@@ -286,23 +108,46 @@
             this.labelUser.TabIndex = 4;
             this.labelUser.Text = "Bienvenido:";
             // 
-            // groupBoxEmployeeMenu
+            // groupBoxEmployee
             // 
-            this.groupBoxEmployeeMenu.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxEmployeeMenu.Controls.Add(this.buttonModifyEmployee);
-            this.groupBoxEmployeeMenu.Controls.Add(this.buttonDeleteEmployee);
-            this.groupBoxEmployeeMenu.Controls.Add(this.buttonSearchEmployee);
-            this.groupBoxEmployeeMenu.Controls.Add(this.labelIDEmployee);
-            this.groupBoxEmployeeMenu.Controls.Add(this.textBoxIDEmployee);
-            this.groupBoxEmployeeMenu.Controls.Add(this.groupBoxAddEmployee);
-            this.groupBoxEmployeeMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEmployeeMenu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxEmployeeMenu.Location = new System.Drawing.Point(250, 91);
-            this.groupBoxEmployeeMenu.Name = "groupBoxEmployeeMenu";
-            this.groupBoxEmployeeMenu.Size = new System.Drawing.Size(302, 383);
-            this.groupBoxEmployeeMenu.TabIndex = 13;
-            this.groupBoxEmployeeMenu.TabStop = false;
-            this.groupBoxEmployeeMenu.Text = "Menu Empleado";
+            this.groupBoxEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxEmployee.Controls.Add(this.buttonAdminEmployee);
+            this.groupBoxEmployee.Controls.Add(this.buttonAddEmployee);
+            this.groupBoxEmployee.Controls.Add(this.buttonModifyEmployee);
+            this.groupBoxEmployee.Controls.Add(this.buttonDeleteEmployee);
+            this.groupBoxEmployee.Controls.Add(this.labelIDEmployee);
+            this.groupBoxEmployee.Controls.Add(this.textBoxIDEmployee);
+            this.groupBoxEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxEmployee.Location = new System.Drawing.Point(295, 147);
+            this.groupBoxEmployee.Name = "groupBoxEmployee";
+            this.groupBoxEmployee.Size = new System.Drawing.Size(250, 146);
+            this.groupBoxEmployee.TabIndex = 13;
+            this.groupBoxEmployee.TabStop = false;
+            this.groupBoxEmployee.Text = "Menu Empleado";
+            // 
+            // buttonAdminEmployee
+            // 
+            this.buttonAdminEmployee.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdminEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAdminEmployee.Location = new System.Drawing.Point(39, 88);
+            this.buttonAdminEmployee.Name = "buttonAdminEmployee";
+            this.buttonAdminEmployee.Size = new System.Drawing.Size(171, 42);
+            this.buttonAdminEmployee.TabIndex = 18;
+            this.buttonAdminEmployee.Text = "Administrar";
+            this.buttonAdminEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddEmployee
+            // 
+            this.buttonAddEmployee.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddEmployee.Location = new System.Drawing.Point(39, 29);
+            this.buttonAddEmployee.Name = "buttonAddEmployee";
+            this.buttonAddEmployee.Size = new System.Drawing.Size(171, 42);
+            this.buttonAddEmployee.TabIndex = 17;
+            this.buttonAddEmployee.Text = "Registrar";
+            this.buttonAddEmployee.UseVisualStyleBackColor = true;
+            this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
             // 
             // buttonModifyEmployee
             // 
@@ -326,17 +171,6 @@
             this.buttonDeleteEmployee.Text = "Eliminar";
             this.buttonDeleteEmployee.UseVisualStyleBackColor = true;
             // 
-            // buttonSearchEmployee
-            // 
-            this.buttonSearchEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearchEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonSearchEmployee.Location = new System.Drawing.Point(103, 310);
-            this.buttonSearchEmployee.Name = "buttonSearchEmployee";
-            this.buttonSearchEmployee.Size = new System.Drawing.Size(99, 27);
-            this.buttonSearchEmployee.TabIndex = 9;
-            this.buttonSearchEmployee.Text = "Consultar";
-            this.buttonSearchEmployee.UseVisualStyleBackColor = true;
-            // 
             // labelIDEmployee
             // 
             this.labelIDEmployee.AutoSize = true;
@@ -356,148 +190,10 @@
             this.textBoxIDEmployee.Size = new System.Drawing.Size(91, 20);
             this.textBoxIDEmployee.TabIndex = 10;
             // 
-            // groupBoxAddEmployee
-            // 
-            this.groupBoxAddEmployee.Controls.Add(this.textBoxIDE);
-            this.groupBoxAddEmployee.Controls.Add(this.labelIDE);
-            this.groupBoxAddEmployee.Controls.Add(this.comboBoxJobTitle);
-            this.groupBoxAddEmployee.Controls.Add(this.textBoxConfirmPassword);
-            this.groupBoxAddEmployee.Controls.Add(this.textBoxPassword);
-            this.groupBoxAddEmployee.Controls.Add(this.textBoxUserName);
-            this.groupBoxAddEmployee.Controls.Add(this.labelConfirmPassword);
-            this.groupBoxAddEmployee.Controls.Add(this.labelJobTitle);
-            this.groupBoxAddEmployee.Controls.Add(this.labelPassword);
-            this.groupBoxAddEmployee.Controls.Add(this.labelUserName);
-            this.groupBoxAddEmployee.Controls.Add(this.buttonAddEmployee);
-            this.groupBoxAddEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxAddEmployee.Location = new System.Drawing.Point(19, 29);
-            this.groupBoxAddEmployee.Name = "groupBoxAddEmployee";
-            this.groupBoxAddEmployee.Size = new System.Drawing.Size(264, 246);
-            this.groupBoxAddEmployee.TabIndex = 9;
-            this.groupBoxAddEmployee.TabStop = false;
-            this.groupBoxAddEmployee.Text = "Registrar";
-            // 
-            // textBoxIDE
-            // 
-            this.textBoxIDE.Location = new System.Drawing.Point(92, 25);
-            this.textBoxIDE.Name = "textBoxIDE";
-            this.textBoxIDE.Size = new System.Drawing.Size(81, 20);
-            this.textBoxIDE.TabIndex = 16;
-            // 
-            // labelIDE
-            // 
-            this.labelIDE.AutoSize = true;
-            this.labelIDE.BackColor = System.Drawing.Color.Transparent;
-            this.labelIDE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDE.Location = new System.Drawing.Point(67, 28);
-            this.labelIDE.Name = "labelIDE";
-            this.labelIDE.Size = new System.Drawing.Size(19, 12);
-            this.labelIDE.TabIndex = 15;
-            this.labelIDE.Text = "ID:";
-            // 
-            // comboBoxJobTitle
-            // 
-            this.comboBoxJobTitle.FormattingEnabled = true;
-            this.comboBoxJobTitle.Location = new System.Drawing.Point(137, 170);
-            this.comboBoxJobTitle.Name = "comboBoxJobTitle";
-            this.comboBoxJobTitle.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxJobTitle.TabIndex = 9;
-            // 
-            // textBoxConfirmPassword
-            // 
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(137, 136);
-            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(121, 20);
-            this.textBoxConfirmPassword.TabIndex = 14;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(137, 102);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPassword.TabIndex = 13;
-            // 
-            // textBoxUserName
-            // 
-            this.textBoxUserName.Location = new System.Drawing.Point(136, 68);
-            this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(121, 20);
-            this.textBoxUserName.TabIndex = 9;
-            // 
-            // labelConfirmPassword
-            // 
-            this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelConfirmPassword.Location = new System.Drawing.Point(43, 129);
-            this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(72, 24);
-            this.labelConfirmPassword.TabIndex = 12;
-            this.labelConfirmPassword.Text = "Confirmar \r\ncontraseña:";
-            // 
-            // labelJobTitle
-            // 
-            this.labelJobTitle.AutoSize = true;
-            this.labelJobTitle.BackColor = System.Drawing.Color.Transparent;
-            this.labelJobTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJobTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelJobTitle.Location = new System.Drawing.Point(56, 174);
-            this.labelJobTitle.Name = "labelJobTitle";
-            this.labelJobTitle.Size = new System.Drawing.Size(46, 12);
-            this.labelJobTitle.TabIndex = 11;
-            this.labelJobTitle.Text = "Puesto:";
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPassword.Location = new System.Drawing.Point(41, 105);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(73, 12);
-            this.labelPassword.TabIndex = 10;
-            this.labelPassword.Text = "Contraseña:";
-            // 
-            // labelUserName
-            // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
-            this.labelUserName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelUserName.Location = new System.Drawing.Point(17, 72);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(98, 12);
-            this.labelUserName.TabIndex = 9;
-            this.labelUserName.Text = "Nombre Usuario:";
-            // 
-            // buttonAddEmployee
-            // 
-            this.buttonAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonAddEmployee.Location = new System.Drawing.Point(58, 205);
-            this.buttonAddEmployee.Name = "buttonAddEmployee";
-            this.buttonAddEmployee.Size = new System.Drawing.Size(169, 23);
-            this.buttonAddEmployee.TabIndex = 8;
-            this.buttonAddEmployee.Text = "Registrar Empleado";
-            this.buttonAddEmployee.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddClientAccount
-            // 
-            this.buttonAddClientAccount.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddClientAccount.Location = new System.Drawing.Point(24, 233);
-            this.buttonAddClientAccount.Name = "buttonAddClientAccount";
-            this.buttonAddClientAccount.Size = new System.Drawing.Size(168, 62);
-            this.buttonAddClientAccount.TabIndex = 14;
-            this.buttonAddClientAccount.Text = "Crear cuenta\r\nCliente";
-            this.buttonAddClientAccount.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(24, 422);
+            this.button1.Location = new System.Drawing.Point(35, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 31);
             this.button1.TabIndex = 15;
@@ -505,44 +201,362 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // buttonFunctions
+            // groupBoxCustomer
             // 
-            this.buttonFunctions.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFunctions.Location = new System.Drawing.Point(24, 325);
-            this.buttonFunctions.Name = "buttonFunctions";
-            this.buttonFunctions.Size = new System.Drawing.Size(168, 62);
-            this.buttonFunctions.TabIndex = 16;
-            this.buttonFunctions.Text = "Administrar\r\nFunciones\r\n";
-            this.buttonFunctions.UseVisualStyleBackColor = true;
+            this.groupBoxCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxCustomer.Controls.Add(this.buttonAdminCostumer);
+            this.groupBoxCustomer.Controls.Add(this.buttonAddCustomer);
+            this.groupBoxCustomer.Controls.Add(this.button4);
+            this.groupBoxCustomer.Controls.Add(this.button5);
+            this.groupBoxCustomer.Controls.Add(this.label1);
+            this.groupBoxCustomer.Controls.Add(this.textBox1);
+            this.groupBoxCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCustomer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxCustomer.Location = new System.Drawing.Point(599, 147);
+            this.groupBoxCustomer.Name = "groupBoxCustomer";
+            this.groupBoxCustomer.Size = new System.Drawing.Size(250, 146);
+            this.groupBoxCustomer.TabIndex = 19;
+            this.groupBoxCustomer.TabStop = false;
+            this.groupBoxCustomer.Text = "Menu Cliente";
+            // 
+            // buttonAdminCostumer
+            // 
+            this.buttonAdminCostumer.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdminCostumer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAdminCostumer.Location = new System.Drawing.Point(39, 88);
+            this.buttonAdminCostumer.Name = "buttonAdminCostumer";
+            this.buttonAdminCostumer.Size = new System.Drawing.Size(171, 42);
+            this.buttonAdminCostumer.TabIndex = 18;
+            this.buttonAdminCostumer.Text = "Administrar";
+            this.buttonAdminCostumer.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddCustomer
+            // 
+            this.buttonAddCustomer.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddCustomer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddCustomer.Location = new System.Drawing.Point(39, 29);
+            this.buttonAddCustomer.Name = "buttonAddCustomer";
+            this.buttonAddCustomer.Size = new System.Drawing.Size(171, 42);
+            this.buttonAddCustomer.TabIndex = 17;
+            this.buttonAddCustomer.Text = "Registrar";
+            this.buttonAddCustomer.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(184, 346);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 27);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Modificar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(19, 346);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(99, 27);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(56, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "ID Empleado:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(139, 284);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(91, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // groupBoxRoom
+            // 
+            this.groupBoxRoom.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxRoom.Controls.Add(this.buttonAdminRoom);
+            this.groupBoxRoom.Controls.Add(this.buttonAddRoom);
+            this.groupBoxRoom.Controls.Add(this.button6);
+            this.groupBoxRoom.Controls.Add(this.button7);
+            this.groupBoxRoom.Controls.Add(this.label2);
+            this.groupBoxRoom.Controls.Add(this.textBox2);
+            this.groupBoxRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxRoom.Location = new System.Drawing.Point(295, 310);
+            this.groupBoxRoom.Name = "groupBoxRoom";
+            this.groupBoxRoom.Size = new System.Drawing.Size(250, 146);
+            this.groupBoxRoom.TabIndex = 19;
+            this.groupBoxRoom.TabStop = false;
+            this.groupBoxRoom.Text = "Menu Sala";
+            // 
+            // buttonAdminRoom
+            // 
+            this.buttonAdminRoom.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdminRoom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAdminRoom.Location = new System.Drawing.Point(39, 88);
+            this.buttonAdminRoom.Name = "buttonAdminRoom";
+            this.buttonAdminRoom.Size = new System.Drawing.Size(171, 42);
+            this.buttonAdminRoom.TabIndex = 18;
+            this.buttonAdminRoom.Text = "Administrar";
+            this.buttonAdminRoom.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddRoom
+            // 
+            this.buttonAddRoom.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddRoom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddRoom.Location = new System.Drawing.Point(39, 29);
+            this.buttonAddRoom.Name = "buttonAddRoom";
+            this.buttonAddRoom.Size = new System.Drawing.Size(171, 42);
+            this.buttonAddRoom.TabIndex = 17;
+            this.buttonAddRoom.Text = "Nueva";
+            this.buttonAddRoom.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Location = new System.Drawing.Point(184, 346);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(99, 27);
+            this.button6.TabIndex = 12;
+            this.button6.Text = "Modificar";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Location = new System.Drawing.Point(19, 346);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(99, 27);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "Eliminar";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(56, 288);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "ID Empleado:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(139, 284);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(91, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // groupBoxMovie
+            // 
+            this.groupBoxMovie.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxMovie.Controls.Add(this.buttonAdminMovie);
+            this.groupBoxMovie.Controls.Add(this.buttonAddMovie);
+            this.groupBoxMovie.Controls.Add(this.button10);
+            this.groupBoxMovie.Controls.Add(this.button11);
+            this.groupBoxMovie.Controls.Add(this.label3);
+            this.groupBoxMovie.Controls.Add(this.textBox3);
+            this.groupBoxMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxMovie.Location = new System.Drawing.Point(599, 310);
+            this.groupBoxMovie.Name = "groupBoxMovie";
+            this.groupBoxMovie.Size = new System.Drawing.Size(250, 146);
+            this.groupBoxMovie.TabIndex = 19;
+            this.groupBoxMovie.TabStop = false;
+            this.groupBoxMovie.Text = "Menu Pelicula";
+            // 
+            // buttonAdminMovie
+            // 
+            this.buttonAdminMovie.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdminMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAdminMovie.Location = new System.Drawing.Point(39, 88);
+            this.buttonAdminMovie.Name = "buttonAdminMovie";
+            this.buttonAdminMovie.Size = new System.Drawing.Size(171, 42);
+            this.buttonAdminMovie.TabIndex = 18;
+            this.buttonAdminMovie.Text = "Administrar";
+            this.buttonAdminMovie.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddMovie
+            // 
+            this.buttonAddMovie.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddMovie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddMovie.Location = new System.Drawing.Point(39, 29);
+            this.buttonAddMovie.Name = "buttonAddMovie";
+            this.buttonAddMovie.Size = new System.Drawing.Size(171, 42);
+            this.buttonAddMovie.TabIndex = 17;
+            this.buttonAddMovie.Text = "Nueva";
+            this.buttonAddMovie.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button10.Location = new System.Drawing.Point(184, 346);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(99, 27);
+            this.button10.TabIndex = 12;
+            this.button10.Text = "Modificar";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button11.Location = new System.Drawing.Point(19, 346);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(99, 27);
+            this.button11.TabIndex = 11;
+            this.button11.Text = "Eliminar";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(56, 288);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "ID Empleado:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(139, 284);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(91, 20);
+            this.textBox3.TabIndex = 10;
+            // 
+            // groupBoxScreening
+            // 
+            this.groupBoxScreening.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxScreening.Controls.Add(this.buttonAdminScreening);
+            this.groupBoxScreening.Controls.Add(this.buttonAddScreening);
+            this.groupBoxScreening.Controls.Add(this.button12);
+            this.groupBoxScreening.Controls.Add(this.button13);
+            this.groupBoxScreening.Controls.Add(this.label4);
+            this.groupBoxScreening.Controls.Add(this.textBox4);
+            this.groupBoxScreening.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxScreening.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxScreening.Location = new System.Drawing.Point(14, 253);
+            this.groupBoxScreening.Name = "groupBoxScreening";
+            this.groupBoxScreening.Size = new System.Drawing.Size(250, 146);
+            this.groupBoxScreening.TabIndex = 19;
+            this.groupBoxScreening.TabStop = false;
+            this.groupBoxScreening.Text = "Menu Funcion";
+            // 
+            // buttonAdminScreening
+            // 
+            this.buttonAdminScreening.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdminScreening.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAdminScreening.Location = new System.Drawing.Point(39, 88);
+            this.buttonAdminScreening.Name = "buttonAdminScreening";
+            this.buttonAdminScreening.Size = new System.Drawing.Size(171, 42);
+            this.buttonAdminScreening.TabIndex = 18;
+            this.buttonAdminScreening.Text = "Administrar";
+            this.buttonAdminScreening.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddScreening
+            // 
+            this.buttonAddScreening.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddScreening.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddScreening.Location = new System.Drawing.Point(39, 29);
+            this.buttonAddScreening.Name = "buttonAddScreening";
+            this.buttonAddScreening.Size = new System.Drawing.Size(171, 42);
+            this.buttonAddScreening.TabIndex = 17;
+            this.buttonAddScreening.Text = "Establecer";
+            this.buttonAddScreening.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button12.Location = new System.Drawing.Point(184, 346);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(99, 27);
+            this.button12.TabIndex = 12;
+            this.button12.Text = "Modificar";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button13.Location = new System.Drawing.Point(19, 346);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(99, 27);
+            this.button13.TabIndex = 11;
+            this.button13.Text = "Eliminar";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(56, 288);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 12);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "ID Empleado:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(139, 284);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(91, 20);
+            this.textBox4.TabIndex = 10;
             // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackgroundImage = global::Decoder_Cinema.Properties.Resources.BackGroundDecoderCinema1;
             this.ClientSize = new System.Drawing.Size(890, 486);
-            this.Controls.Add(this.buttonFunctions);
+            this.Controls.Add(this.groupBoxScreening);
+            this.Controls.Add(this.groupBoxMovie);
+            this.Controls.Add(this.groupBoxRoom);
+            this.Controls.Add(this.groupBoxCustomer);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonAddClientAccount);
-            this.Controls.Add(this.groupBoxEmployeeMenu);
+            this.Controls.Add(this.groupBoxEmployee);
             this.Controls.Add(this.labelUser);
-            this.Controls.Add(this.groupBoxMovieMenu);
-            this.Controls.Add(this.buttonBuyTicket);
+            this.Controls.Add(this.buttonSellTicket);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Decoder Cinema Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxMovieMenu.ResumeLayout(false);
-            this.groupBoxMovieMenu.PerformLayout();
-            this.groupBoxAddMovie.ResumeLayout(false);
-            this.groupBoxAddMovie.PerformLayout();
-            this.groupBoxEmployeeMenu.ResumeLayout(false);
-            this.groupBoxEmployeeMenu.PerformLayout();
-            this.groupBoxAddEmployee.ResumeLayout(false);
-            this.groupBoxAddEmployee.PerformLayout();
+            this.groupBoxEmployee.ResumeLayout(false);
+            this.groupBoxEmployee.PerformLayout();
+            this.groupBoxCustomer.ResumeLayout(false);
+            this.groupBoxCustomer.PerformLayout();
+            this.groupBoxRoom.ResumeLayout(false);
+            this.groupBoxRoom.PerformLayout();
+            this.groupBoxMovie.ResumeLayout(false);
+            this.groupBoxMovie.PerformLayout();
+            this.groupBoxScreening.ResumeLayout(false);
+            this.groupBoxScreening.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -551,44 +565,43 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonBuyTicket;
-        private System.Windows.Forms.GroupBox groupBoxMovieMenu;
+        private System.Windows.Forms.Button buttonSellTicket;
         private System.Windows.Forms.Label labelUser;
-        private System.Windows.Forms.GroupBox groupBoxAddMovie;
-        private System.Windows.Forms.Button buttonAddMovie;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBoxClassification;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxMovieName;
-        private System.Windows.Forms.Label labelMovieTitle;
-        private System.Windows.Forms.ComboBox comboBoxGender;
-        private System.Windows.Forms.GroupBox groupBoxEmployeeMenu;
+        private System.Windows.Forms.GroupBox groupBoxEmployee;
         private System.Windows.Forms.Button buttonModifyEmployee;
         private System.Windows.Forms.Button buttonDeleteEmployee;
-        private System.Windows.Forms.Button buttonSearchEmployee;
         private System.Windows.Forms.Label labelIDEmployee;
         private System.Windows.Forms.TextBox textBoxIDEmployee;
-        private System.Windows.Forms.GroupBox groupBoxAddEmployee;
-        private System.Windows.Forms.Button buttonAddEmployee;
-        private System.Windows.Forms.ComboBox comboBoxJobTitle;
-        private System.Windows.Forms.TextBox textBoxConfirmPassword;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.TextBox textBoxUserName;
-        private System.Windows.Forms.Label labelConfirmPassword;
-        private System.Windows.Forms.Label labelJobTitle;
-        private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.Label labelUserName;
-        private System.Windows.Forms.Button buttonAddClientAccount;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonModifyMovie;
-        private System.Windows.Forms.Button buttonDeleteMovie;
-        private System.Windows.Forms.Button buttonSearchMovie;
-        private System.Windows.Forms.Label labelIDMovie;
-        private System.Windows.Forms.TextBox textBoxIDMovie;
-        private System.Windows.Forms.TextBox textBoxIDM;
-        private System.Windows.Forms.Label labelIDM;
-        private System.Windows.Forms.TextBox textBoxIDE;
-        private System.Windows.Forms.Label labelIDE;
-        private System.Windows.Forms.Button buttonFunctions;
+        private System.Windows.Forms.Button buttonAdminEmployee;
+        private System.Windows.Forms.Button buttonAddEmployee;
+        private System.Windows.Forms.GroupBox groupBoxCustomer;
+        private System.Windows.Forms.Button buttonAdminCostumer;
+        private System.Windows.Forms.Button buttonAddCustomer;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBoxRoom;
+        private System.Windows.Forms.Button buttonAdminRoom;
+        private System.Windows.Forms.Button buttonAddRoom;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox groupBoxMovie;
+        private System.Windows.Forms.Button buttonAdminMovie;
+        private System.Windows.Forms.Button buttonAddMovie;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox groupBoxScreening;
+        private System.Windows.Forms.Button buttonAdminScreening;
+        private System.Windows.Forms.Button buttonAddScreening;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

@@ -58,7 +58,7 @@ namespace Decoder_Cinema
             MySqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                if (reader.GetString(3) == "Director")
+                if (reader.GetInt32(3) == 1)
                 {
                     AdminMenu adminmenu = new AdminMenu();
                     Connection.CloseConnection();

@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Decoder_Cinema.Class
 {
-    class Connection
+    public class Connection
     {
         public MySqlConnection myConnection;
 

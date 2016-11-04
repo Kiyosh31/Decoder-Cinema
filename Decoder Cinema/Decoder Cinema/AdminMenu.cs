@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Decoder_Cinema
 {
     public partial class AdminMenu : Form
     {
+        Class.Connection Connection = new Class.Connection();
+
         public AdminMenu()
         {
             InitializeComponent();
@@ -20,6 +23,12 @@ namespace Decoder_Cinema
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void buttonAddEmployee_Click(object sender, EventArgs e)
+        {
+            AddEmployee addemployee = new AddEmployee(Connection);
+            addemployee.ShowDialog();
         }
     }
 }
