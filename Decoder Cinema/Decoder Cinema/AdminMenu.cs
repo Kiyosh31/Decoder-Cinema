@@ -30,5 +30,13 @@ namespace Decoder_Cinema
             AddEmployee addemployee = new AddEmployee(Connection);
             addemployee.ShowDialog();
         }
+
+        private void buttonAdminEmployee_Click(object sender, EventArgs e)
+        {
+            AdminEmployee adminemployee = new AdminEmployee(Connection);
+            this.Hide();
+            adminemployee.ShowDialog();
+            this.Show();
+        }
     }
 }

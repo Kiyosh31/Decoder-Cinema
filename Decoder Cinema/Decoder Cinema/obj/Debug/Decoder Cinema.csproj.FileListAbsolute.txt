@@ -23,3 +23,5 @@ C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\
 C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.dll
 C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\Decoder Cinema\bin\Debug\MySql.Data.xml
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddEmployee.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminEmployee.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ModifyEmployee.resources

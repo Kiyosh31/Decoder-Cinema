@@ -62,7 +62,9 @@ namespace Decoder_Cinema
                 {
                     AdminMenu adminmenu = new AdminMenu();
                     Connection.CloseConnection();
+                    this.Hide();
                     adminmenu.ShowDialog();
+                    this.Show();
                 }
                 else
                 {

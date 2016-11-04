@@ -136,6 +136,7 @@
             this.buttonAdminEmployee.TabIndex = 18;
             this.buttonAdminEmployee.Text = "Administrar";
             this.buttonAdminEmployee.UseVisualStyleBackColor = true;
+            this.buttonAdminEmployee.Click += new System.EventHandler(this.buttonAdminEmployee_Click);
             // 
             // buttonAddEmployee
             // 

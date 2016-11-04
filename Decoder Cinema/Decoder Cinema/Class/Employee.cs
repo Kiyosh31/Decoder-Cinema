@@ -17,6 +17,7 @@ namespace Decoder_Cinema.Class
 
         public Employee(int idEmployee, string name, string password, int idJobPosition, bool active)
         {
+            this.idEmployee = idEmployee;
             this.name = name;
             this.password = password;
             this.idJobPosition = idJobPosition;

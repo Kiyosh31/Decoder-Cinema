@@ -1,6 +1,6 @@
 ﻿namespace Decoder_Cinema
 {
-    partial class AddEmployee
+    partial class ModifyEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelIDE = new System.Windows.Forms.Label();
             this.comboBoxJobPosition = new System.Windows.Forms.ComboBox();
-            this.buttonAddEmployee = new System.Windows.Forms.Button();
+            this.buttonModifyEmployee = new System.Windows.Forms.Button();
             this.labelUserName = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -41,11 +41,11 @@
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(132, 16);
+            this.textBoxID.Location = new System.Drawing.Point(132, 19);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(81, 20);
-            this.textBoxID.TabIndex = 25;
+            this.textBoxID.TabIndex = 34;
             // 
             // labelIDE
             // 
@@ -53,10 +53,10 @@
             this.labelIDE.BackColor = System.Drawing.Color.Transparent;
             this.labelIDE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIDE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDE.Location = new System.Drawing.Point(92, 20);
+            this.labelIDE.Location = new System.Drawing.Point(92, 23);
             this.labelIDE.Name = "labelIDE";
             this.labelIDE.Size = new System.Drawing.Size(19, 12);
-            this.labelIDE.TabIndex = 24;
+            this.labelIDE.TabIndex = 33;
             this.labelIDE.Text = "ID:";
             // 
             // comboBoxJobPosition
@@ -65,23 +65,23 @@
             this.comboBoxJobPosition.Items.AddRange(new object[] {
             "Gerente",
             "Vendedor"});
-            this.comboBoxJobPosition.Location = new System.Drawing.Point(132, 141);
+            this.comboBoxJobPosition.Location = new System.Drawing.Point(132, 144);
             this.comboBoxJobPosition.Name = "comboBoxJobPosition";
             this.comboBoxJobPosition.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxJobPosition.TabIndex = 18;
+            this.comboBoxJobPosition.TabIndex = 27;
             // 
-            // buttonAddEmployee
+            // buttonModifyEmployee
             // 
-            this.buttonAddEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonAddEmployee.Location = new System.Drawing.Point(0, 181);
-            this.buttonAddEmployee.Name = "buttonAddEmployee";
-            this.buttonAddEmployee.Size = new System.Drawing.Size(351, 25);
-            this.buttonAddEmployee.TabIndex = 17;
-            this.buttonAddEmployee.Text = "Registrar Empleado";
-            this.buttonAddEmployee.UseVisualStyleBackColor = true;
-            this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
+            this.buttonModifyEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonModifyEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifyEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonModifyEmployee.Location = new System.Drawing.Point(0, 181);
+            this.buttonModifyEmployee.Name = "buttonModifyEmployee";
+            this.buttonModifyEmployee.Size = new System.Drawing.Size(351, 25);
+            this.buttonModifyEmployee.TabIndex = 26;
+            this.buttonModifyEmployee.Text = "Modificar";
+            this.buttonModifyEmployee.UseVisualStyleBackColor = true;
+            this.buttonModifyEmployee.Click += new System.EventHandler(this.buttonModifyEmployee_Click);
             // 
             // labelUserName
             // 
@@ -89,18 +89,18 @@
             this.labelUserName.BackColor = System.Drawing.Color.Transparent;
             this.labelUserName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelUserName.Location = new System.Drawing.Point(13, 63);
+            this.labelUserName.Location = new System.Drawing.Point(13, 66);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(108, 12);
-            this.labelUserName.TabIndex = 19;
+            this.labelUserName.TabIndex = 28;
             this.labelUserName.Text = "Nombre Completo:";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(132, 101);
+            this.textBoxPassword.Location = new System.Drawing.Point(132, 104);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPassword.TabIndex = 23;
+            this.textBoxPassword.TabIndex = 32;
             // 
             // labelPassword
             // 
@@ -108,18 +108,18 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPassword.Location = new System.Drawing.Point(36, 104);
+            this.labelPassword.Location = new System.Drawing.Point(36, 107);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(73, 12);
-            this.labelPassword.TabIndex = 21;
+            this.labelPassword.TabIndex = 30;
             this.labelPassword.Text = "Contraseña:";
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(132, 59);
+            this.textBoxUserName.Location = new System.Drawing.Point(132, 62);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(209, 20);
-            this.textBoxUserName.TabIndex = 20;
+            this.textBoxUserName.TabIndex = 29;
             // 
             // labelJobTitle
             // 
@@ -127,13 +127,13 @@
             this.labelJobTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelJobTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJobTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelJobTitle.Location = new System.Drawing.Point(51, 145);
+            this.labelJobTitle.Location = new System.Drawing.Point(51, 148);
             this.labelJobTitle.Name = "labelJobTitle";
             this.labelJobTitle.Size = new System.Drawing.Size(46, 12);
-            this.labelJobTitle.TabIndex = 22;
+            this.labelJobTitle.TabIndex = 31;
             this.labelJobTitle.Text = "Puesto:";
             // 
-            // AddEmployee
+            // ModifyEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,15 +142,14 @@
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.labelIDE);
             this.Controls.Add(this.comboBoxJobPosition);
-            this.Controls.Add(this.buttonAddEmployee);
+            this.Controls.Add(this.buttonModifyEmployee);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelJobTitle);
-            this.Name = "AddEmployee";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddEmployee";
+            this.Name = "ModifyEmployee";
+            this.Text = "ModifyEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +160,7 @@
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label labelIDE;
         private System.Windows.Forms.ComboBox comboBoxJobPosition;
-        private System.Windows.Forms.Button buttonAddEmployee;
+        private System.Windows.Forms.Button buttonModifyEmployee;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelPassword;
