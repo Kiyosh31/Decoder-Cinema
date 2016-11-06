@@ -43,7 +43,7 @@
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(337, 91);
+            this.textBoxUserName.Location = new System.Drawing.Point(138, 55);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(100, 20);
             this.textBoxUserName.TabIndex = 10;
@@ -51,7 +51,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(337, 128);
+            this.textBoxPassword.Location = new System.Drawing.Point(138, 81);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
@@ -60,9 +60,9 @@
             // 
             // buttonLogIn
             // 
-            this.buttonLogIn.Location = new System.Drawing.Point(234, 167);
+            this.buttonLogIn.Location = new System.Drawing.Point(40, 115);
             this.buttonLogIn.Name = "buttonLogIn";
-            this.buttonLogIn.Size = new System.Drawing.Size(271, 31);
+            this.buttonLogIn.Size = new System.Drawing.Size(83, 19);
             this.buttonLogIn.TabIndex = 12;
             this.buttonLogIn.Text = "Iniciar sesion";
             this.buttonLogIn.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(322, 217);
+            this.buttonExit.Location = new System.Drawing.Point(155, 115);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(101, 31);
+            this.buttonExit.Size = new System.Drawing.Size(83, 19);
             this.buttonExit.TabIndex = 13;
             this.buttonExit.Text = "Salir";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(290, 94);
+            this.label1.Location = new System.Drawing.Point(91, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 14;
@@ -94,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(247, 131);
+            this.label2.Location = new System.Drawing.Point(48, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 15;
@@ -104,10 +104,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Decoder_Cinema.Properties.Resources.Logo_Decoder;
-            this.pictureBox1.Location = new System.Drawing.Point(239, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(266, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(266, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -115,9 +115,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 44);
+            this.pictureBox2.Location = new System.Drawing.Point(284, 46);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(195, 175);
+            this.pictureBox2.Size = new System.Drawing.Size(89, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -126,8 +126,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Decoder_Cinema.Properties.Resources.BackGroundDecoderCinema1;
-            this.ClientSize = new System.Drawing.Size(526, 260);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(402, 145);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);

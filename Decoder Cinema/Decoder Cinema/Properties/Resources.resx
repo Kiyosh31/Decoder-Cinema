@@ -121,13 +121,10 @@
   <data name="Seguridad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seguridad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackGroundDecoderCinema1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackGroundDecoderCinema1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BackGroundDecoderCinema" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackGroundDecoderCinema.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Logo Decoder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo Decoder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="darth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

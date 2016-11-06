@@ -31,12 +31,42 @@ namespace Decoder_Cinema
             addemployee.ShowDialog();
         }
 
+        private void buttonAddMovie_Click(object sender, EventArgs e)
+        {
+            AddMovie addmovie = new AddMovie(Connection);
+            addmovie.ShowDialog();
+        }
+
+        private void buttonAddCustomer_Click(object sender, EventArgs e)
+        {
+            AddCustomer addcustomer = new AddCustomer(Connection);
+            addcustomer.ShowDialog();
+        }
+
+        private void buttonAddRoom_Click(object sender, EventArgs e)
+        {
+            AddRoom addroom = new AddRoom(Connection);
+            addroom.ShowDialog();
+        }
+
         private void buttonAdminEmployee_Click(object sender, EventArgs e)
         {
             AdminEmployee adminemployee = new AdminEmployee(Connection);
             this.Hide();
             adminemployee.ShowDialog();
             this.Show();
+        }
+
+        private void buttonAdminCostumer_Click(object sender, EventArgs e)
+        {
+            AdminCustomer admincustomer = new AdminCustomer(Connection);
+            admincustomer.ShowDialog();
+        }
+
+        private void buttonAdminRoom_Click(object sender, EventArgs e)
+        {
+            AdminRoom adminroom = new AdminRoom(Connection);
+            adminroom.ShowDialog();
         }
     }
 }

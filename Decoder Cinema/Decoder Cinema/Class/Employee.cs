@@ -15,13 +15,18 @@ namespace Decoder_Cinema.Class
         int idJobPosition;
         bool active;
 
-        public Employee(int idEmployee, string name, string password, int idJobPosition, bool active)
+        public Employee(int idEmployee, string name, string password, int idJobPosition)
         {
             this.idEmployee = idEmployee;
             this.name = name;
             this.password = password;
             this.idJobPosition = idJobPosition;
-            this.active = active;
+        }
+
+        public Employee(int idEmployee, string name, string password, string idJobPosition)
+        {
+            this.idEmployee = idEmployee;
+
         }
 
         public int ID
@@ -61,16 +66,21 @@ namespace Decoder_Cinema.Class
             return OK;
         }
 
-        /*public static int SearchEmployee(MySqlConnection Connection, string idEmployee)
+        public static Employee SearchEmployee(MySqlConnection Connection, string idEmployee)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM employee WHERE idEmployee = {0}", idEmployee), Connection);
-            int OK = command.ExecuteNonQuery();
-            return OK;
-        }*/
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM employee WHERE idEmployee = {0} AND active = true", idEmployee), Connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Employee employee = new Employee(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3));
+                return employee;
+            }
+            Employee e = null; return e;
+        }
 
         public static int ModifyEmployee(MySqlConnection Connection, Employee employee)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("UPDATE employee SET eName = '{0}', ePassword = '{1}', eJobPosition = {2}, active = true WHERE idEmployee = {3}", employee.name, employee.password, employee.idJobPosition, employee.idEmployee), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("UPDATE employee SET eName = '{0}', ePassword = '{1}', JobPosition_idJobPosition = {2}, active = true WHERE idEmployee = {3}", employee.name, employee.password, employee.idJobPosition, employee.idEmployee), Connection);
             int OK = command.ExecuteNonQuery();
             return OK;
         }
@@ -81,15 +91,11 @@ namespace Decoder_Cinema.Class
             int OK = command.ExecuteNonQuery();
             return OK;
         }
-
-        public static IList<Employee> ShowEmployee(MySqlConnection Connection)
+       
+        public static MySqlDataAdapter ShowEmployee(MySqlConnection Connection)
         {
-            List<Employee> lEmployee = new List<Employee>();
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM employee"), Connection);
-            MySqlDataReader reader = command.ExecuteReader();
-            while(reader.Read()) { Employee employee = new Employee(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetBoolean(4));
-                lEmployee.Add(employee); }
-            return lEmployee;
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT idEmployee as ID, eName as Nombre, ePassword as Password, Name as Puesto FROM employee e INNER JOIN jobposition j ON e.JobPosition_idJobPosition = j.idJobPosition WHERE active = true", Connection);
+            return da;
         }
     }
 }

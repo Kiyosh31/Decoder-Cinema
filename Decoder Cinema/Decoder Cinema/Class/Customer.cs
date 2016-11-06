@@ -15,9 +15,8 @@ namespace Decoder_Cinema.Class
         string adress;
         string email;
         string tel;
-        bool active;
 
-        public Customer(int idCustomer, string name, string lastName, string adress, string email, string tel, bool active)
+        public Customer(int idCustomer, string name, string lastName, string adress, string email, string tel)
         {
             this.idCustomer = idCustomer;
             this.name = name;
@@ -25,7 +24,6 @@ namespace Decoder_Cinema.Class
             this.adress = adress;
             this.email = email;
             this.tel = tel;
-            this.active = active;
         }
 
         public int ID
@@ -64,12 +62,6 @@ namespace Decoder_Cinema.Class
             set { tel = value; }
         }
 
-        public bool Active
-        {
-            get { return active; }
-            set { active = value; }
-        }
-
         public static int AddCustomer(MySqlConnection Connection, Customer customer)
         {
             MySqlCommand command = new MySqlCommand(String.Format("INSERT INTO customer(cName, cLastName, cAdress, cEmail, cTel, active) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', true)", customer.name, customer.lastName, customer.adress, customer.email, customer.tel), Connection);
@@ -78,12 +70,17 @@ namespace Decoder_Cinema.Class
             return OK;
         }
 
-        /*public static int SearchCustomer(MySqlConnection Connection, string idCustomer)
+        public static Customer SearchCustomer(MySqlConnection Connection, string idCustomer)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM customer WHERE idCustomer = {0}", idCustomer), Connection);
-            MySqlDataReader OK = command.ExecuteReader();
-            return OK;
-        }*/
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM customer WHERE idCustomer = {0} AND active = true", idCustomer), Connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Customer customer = new Customer(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5));
+                return customer;
+            }
+            Customer e = null; return e;
+        }
 
         public static int ModifyCustomer(MySqlConnection Connection, Customer customer)
         {
@@ -102,11 +99,11 @@ namespace Decoder_Cinema.Class
         public static IList<Customer> ShowEmployee(MySqlConnection Connection)
         {
             List<Customer> lCustomer = new List<Customer>();
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM customer"), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM customer WHERE active = true"), Connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Customer customer = new Customer(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetBoolean(6));
+                Customer customer = new Customer(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5));
                 lCustomer.Add(customer);
             }
             return lCustomer;

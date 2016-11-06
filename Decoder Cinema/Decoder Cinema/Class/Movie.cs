@@ -11,17 +11,21 @@ namespace Decoder_Cinema.Class
     {
         int idMovie;
         string name;
+        string duration;
         string clasification;
         string category;
-        bool active;
+        string sinopsis;
+        string url;
 
-        public Movie(int idMovie, string name, string clasification, string category, bool active)
+        public Movie(int idMovie, string name, string duration, string clasification, string category, string sinopsis, string url)
         {
             this.idMovie = idMovie;
             this.name = name;
+            this.duration = duration;
             this.clasification = clasification;
             this.category = category;
-            this.active = active;
+            this.sinopsis = sinopsis;
+            this.url = url;
         }
 
         public int ID
@@ -36,6 +40,12 @@ namespace Decoder_Cinema.Class
             set { name = value; }
         }
 
+        public string Duration
+        {
+            get { return duration; }
+            set { duration = value; }
+        }
+
         public string Clasification
         {
             get { return clasification; }
@@ -48,15 +58,21 @@ namespace Decoder_Cinema.Class
             set { category = value; }
         }
 
-        public bool Active
+        public string Sinopsis
         {
-            get { return active; }
-            set { active = value; }
+            get { return sinopsis; }
+            set { sinopsis = value; }
+        }
+
+        public string URL
+        {
+            get { return url; }
+            set { url = value; }
         }
 
         public static int AddMovie(MySqlConnection Connection, Movie movie)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("INSERT INTO movie(mNAme, mClasification, mCategory, active) VALUES('{0}', '{1}', '{2}', true)", movie.name, movie.clasification, movie.category), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("INSERT INTO movie(mName, mDuration, mClasification, mCategory, mSinopsis, mUrl, active) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', true)", movie.name, movie.duration, movie.clasification, movie.category, movie.sinopsis, movie.url), Connection);
             int OK = command.ExecuteNonQuery();
             /// if OK = 1 it's ok, if OK = 0 error
             return OK;
@@ -76,14 +92,14 @@ namespace Decoder_Cinema.Class
             return OK;
         }
 
-        public static IList<Movie> ShowEmployee(MySqlConnection Connection)
+        public static IList<Movie> ShowMovie(MySqlConnection Connection)
         {
             List<Movie> lMovie = new List<Movie>();
             MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM movie"), Connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Movie movie = new Movie(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetBoolean(4));
+                Movie movie = new Movie(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6));
                 lMovie.Add(movie);
             }
             return lMovie;

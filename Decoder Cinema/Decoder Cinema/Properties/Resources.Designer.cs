@@ -63,19 +63,9 @@ namespace Decoder_Cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BackGroundDecoderCinema {
+        internal static System.Drawing.Bitmap darth {
             get {
-                object obj = ResourceManager.GetObject("BackGroundDecoderCinema", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BackGroundDecoderCinema1 {
-            get {
-                object obj = ResourceManager.GetObject("BackGroundDecoderCinema1", resourceCulture);
+                object obj = ResourceManager.GetObject("darth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

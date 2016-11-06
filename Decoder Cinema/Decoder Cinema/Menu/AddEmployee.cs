@@ -33,7 +33,7 @@ namespace Decoder_Cinema
                 int job = 2;
                 if(comboBoxJobPosition.Text == "Gerente") { job = 1; }
                 else if(comboBoxJobPosition.Text == "Vendedor") { job = 2; }
-                Class.Employee employee = new Class.Employee(1, textBoxUserName.Text, textBoxPassword.Text, job, true);
+                Class.Employee employee = new Class.Employee(1, textBoxUserName.Text, textBoxPassword.Text, job);
                 Class.Employee.AddEmployee(Connection.myConnection, employee);
                 Connection.CloseConnection();
 

@@ -25,3 +25,10 @@ C:\Users\kyo_9\Desktop\DecoderCinema-master\DecoderCinema-master\Decoder Cinema\
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddEmployee.resources
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminEmployee.resources
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ModifyEmployee.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddCustomer.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddMovie.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddRoom.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminCustomer.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ModifyCustomer.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminRoom.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ModifyRoom.resources

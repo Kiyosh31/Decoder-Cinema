@@ -149,7 +149,9 @@
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelJobTitle);
             this.Name = "ModifyEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyEmployee";
+            this.Load += new System.EventHandler(this.ModifyEmployee_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

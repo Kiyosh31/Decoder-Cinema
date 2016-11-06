@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonSellTicket = new System.Windows.Forms.Button();
             this.labelUser = new System.Windows.Forms.Label();
@@ -102,7 +103,7 @@
             this.labelUser.BackColor = System.Drawing.Color.Transparent;
             this.labelUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelUser.Location = new System.Drawing.Point(12, 91);
+            this.labelUser.Location = new System.Drawing.Point(12, 42);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(70, 12);
             this.labelUser.TabIndex = 4;
@@ -118,7 +119,7 @@
             this.groupBoxEmployee.Controls.Add(this.labelIDEmployee);
             this.groupBoxEmployee.Controls.Add(this.textBoxIDEmployee);
             this.groupBoxEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBoxEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBoxEmployee.Location = new System.Drawing.Point(295, 147);
             this.groupBoxEmployee.Name = "groupBoxEmployee";
             this.groupBoxEmployee.Size = new System.Drawing.Size(250, 146);
@@ -230,6 +231,7 @@
             this.buttonAdminCostumer.TabIndex = 18;
             this.buttonAdminCostumer.Text = "Administrar";
             this.buttonAdminCostumer.UseVisualStyleBackColor = true;
+            this.buttonAdminCostumer.Click += new System.EventHandler(this.buttonAdminCostumer_Click);
             // 
             // buttonAddCustomer
             // 
@@ -241,6 +243,7 @@
             this.buttonAddCustomer.TabIndex = 17;
             this.buttonAddCustomer.Text = "Registrar";
             this.buttonAddCustomer.UseVisualStyleBackColor = true;
+            this.buttonAddCustomer.Click += new System.EventHandler(this.buttonAddCustomer_Click);
             // 
             // button4
             // 
@@ -311,6 +314,7 @@
             this.buttonAdminRoom.TabIndex = 18;
             this.buttonAdminRoom.Text = "Administrar";
             this.buttonAdminRoom.UseVisualStyleBackColor = true;
+            this.buttonAdminRoom.Click += new System.EventHandler(this.buttonAdminRoom_Click);
             // 
             // buttonAddRoom
             // 
@@ -322,6 +326,7 @@
             this.buttonAddRoom.TabIndex = 17;
             this.buttonAddRoom.Text = "Nueva";
             this.buttonAddRoom.UseVisualStyleBackColor = true;
+            this.buttonAddRoom.Click += new System.EventHandler(this.buttonAddRoom_Click);
             // 
             // button6
             // 
@@ -403,6 +408,7 @@
             this.buttonAddMovie.TabIndex = 17;
             this.buttonAddMovie.Text = "Nueva";
             this.buttonAddMovie.UseVisualStyleBackColor = true;
+            this.buttonAddMovie.Click += new System.EventHandler(this.buttonAddMovie_Click);
             // 
             // button10
             // 
@@ -531,7 +537,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackgroundImage = global::Decoder_Cinema.Properties.Resources.BackGroundDecoderCinema1;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(890, 486);
             this.Controls.Add(this.groupBoxScreening);
             this.Controls.Add(this.groupBoxMovie);

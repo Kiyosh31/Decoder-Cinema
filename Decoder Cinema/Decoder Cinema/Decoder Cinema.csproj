@@ -50,16 +50,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEmployee.cs">
+    <Compile Include="AdminRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEmployee.Designer.cs">
+    <Compile Include="AdminRoom.Designer.cs">
+      <DependentUpon>AdminRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AdminCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AdminCustomer.Designer.cs">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AddRoom.Designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminEmployee.cs">
+    <Compile Include="Menu\AdminEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminEmployee.Designer.cs">
+    <Compile Include="Menu\AdminEmployee.Designer.cs">
       <DependentUpon>AdminEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Connection.cs" />
@@ -82,18 +112,45 @@
     <Compile Include="AdminMenu.Designer.cs">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifyEmployee.cs">
+    <Compile Include="Menu\ModifyEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModifyEmployee.Designer.cs">
+    <Compile Include="Menu\ModifyEmployee.Designer.cs">
       <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\ModifyCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\ModifyCustomer.Designer.cs">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyRoom.Designer.cs">
+      <DependentUpon>ModifyRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddEmployee.resx">
+    <EmbeddedResource Include="AdminRoom.resx">
+      <DependentUpon>AdminRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AdminCustomer.resx">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminEmployee.resx">
+    <EmbeddedResource Include="Menu\AdminEmployee.resx">
       <DependentUpon>AdminEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
@@ -102,8 +159,14 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifyEmployee.resx">
+    <EmbeddedResource Include="Menu\ModifyEmployee.resx">
       <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\ModifyCustomer.resx">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyRoom.resx">
+      <DependentUpon>ModifyRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,19 +192,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BackGroundDecoderCinema.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Seguridad.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo Decoder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dark-blue-powerpoint-background-wallpaper-hd-06813.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BackGroundDecoderCinema1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.bmp" />
@@ -150,7 +204,7 @@
     <None Include="Resources\Logo Decoder1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Menu\" />
+    <None Include="Resources\darth.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
