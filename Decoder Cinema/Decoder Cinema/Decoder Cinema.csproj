@@ -50,10 +50,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminRoom.cs">
+    <Compile Include="AddScreening.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminRoom.Designer.cs">
+    <Compile Include="AddScreening.Designer.cs">
+      <DependentUpon>AddScreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScreening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScreening.Designer.cs">
+      <DependentUpon>AdminScreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScreeningMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScreeningMovie.Designer.cs">
+      <DependentUpon>AddScreeningMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AdminMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AdminMovie.Designer.cs">
+      <DependentUpon>AdminMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\AdminRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\AdminRoom.Designer.cs">
       <DependentUpon>AdminRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu\AdminCustomer.cs">
@@ -124,15 +148,39 @@
     <Compile Include="Menu\ModifyCustomer.Designer.cs">
       <DependentUpon>ModifyCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifyRoom.cs">
+    <Compile Include="Menu\ModifyRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModifyRoom.Designer.cs">
+    <Compile Include="Menu\ModifyRoom.Designer.cs">
       <DependentUpon>ModifyRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\ModifyMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\ModifyMovie.Designer.cs">
+      <DependentUpon>ModifyMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyScreening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyScreening.Designer.cs">
+      <DependentUpon>ModifyScreening.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminRoom.resx">
+    <EmbeddedResource Include="AddScreening.resx">
+      <DependentUpon>AddScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScreeningMovie.resx">
+      <DependentUpon>AddScreeningMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScreening.resx">
+      <DependentUpon>AdminScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AdminMovie.resx">
+      <DependentUpon>AdminMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\AdminRoom.resx">
       <DependentUpon>AdminRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\AdminCustomer.resx">
@@ -165,8 +213,14 @@
     <EmbeddedResource Include="Menu\ModifyCustomer.resx">
       <DependentUpon>ModifyCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifyRoom.resx">
+    <EmbeddedResource Include="Menu\ModifyRoom.resx">
       <DependentUpon>ModifyRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\ModifyMovie.resx">
+      <DependentUpon>ModifyMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyScreening.resx">
+      <DependentUpon>ModifyScreening.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -11,21 +11,28 @@ namespace Decoder_Cinema.Class
     {
         int idScreening;
         float price;
+        int stock;
         string startTime;
         string endTime;
+        string date;
         int r_idRoom;
         int m_idMovie;
-        bool active;
 
-        public Screening(int idScreening, float price, string startTime, string endTime, int r_idRoom, int m_idMovie, bool active)
+        public Screening(int idScreening, float price, string startTime, string endTime, int stock, string date, int r_idRoom, int m_idMovie)
         {
             this.idScreening = idScreening;
             this.price = price;
             this.startTime = startTime;
             this.endTime = endTime;
+            this.stock = stock;
+            this.date = date;
             this.r_idRoom = r_idRoom;
             this.m_idMovie = m_idMovie;
-            this.active = active;
+        }
+
+        public Screening()
+        {
+
         }
 
         public int ID
@@ -40,6 +47,12 @@ namespace Decoder_Cinema.Class
             set { price = value; }
         }
 
+        public int Stock
+        {
+            get { return stock; }
+            set { stock = value; }
+        }
+
         public string Start_Time
         {
             get { return startTime; }
@@ -50,6 +63,12 @@ namespace Decoder_Cinema.Class
         {
             get { return endTime; }
             set { endTime = value; }
+        }
+
+        public string Date
+        {
+            get { return date; }
+            set { date = value; }
         }
 
         public int ID_Room
@@ -64,23 +83,29 @@ namespace Decoder_Cinema.Class
             set { m_idMovie = value; }
         }
 
-        public bool Active
-        {
-            get { return active; }
-            set { active = value; }
-        }
-
         public static int AddScreening(MySqlConnection Connection, Screening screening)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("INSERT INTO screening(sPrice, sStartTime, sEndTime, Room_idRoom, Movie_idMovie, Active) VALUES({0}, '{1}', '{2}', {3}, {4}, true)", screening.price, screening.startTime, screening.endTime, screening.r_idRoom, screening.m_idMovie), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("INSERT INTO screening(sPrice, sStartTime, sEndTime, Stock, Date, Room_idRoom, Movie_idMovie, Active) VALUES({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', true)", screening.price, screening.startTime, screening.endTime, screening.stock, screening.date, screening.r_idRoom, screening.m_idMovie), Connection);
             int OK = command.ExecuteNonQuery();
             /// if OK = 1 it's ok, if OK = 0 error
             return OK;
         }
 
+        public static Screening SearchScreening(MySqlConnection Connection, string idScreening)
+        {
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM screening WHERE idScreening = {0} AND Active = true", idScreening), Connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Screening screening = new Screening(reader.GetInt32(0), reader.GetFloat(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6), reader.GetInt32(7));
+                return screening;
+            }
+            Screening e = null; return e;
+        }
+
         public static int ModifyScreening(MySqlConnection Connection, Screening screening)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("UPDATE screening SET sPRice = {0}, sStartTime = '{1}', sEndTime = '{2}', Room_idRoom = {3}, Movie_idMovie = {4}, Active = true WHERE idScreening = {5}", screening.price, screening.startTime, screening.endTime, screening.r_idRoom, screening.m_idMovie, screening.idScreening), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("UPDATE screening SET sPrice = '{0}', sStartTime = '{1}', sEndTime = '{2}', Stock = '{3}', Date = '{4}', Room_idRoom = '{5}', Movie_idMovie = '{6}' WHERE idScreening = {7}", screening.price, screening.startTime, screening.endTime, screening.stock, screening.date, screening.r_idRoom, screening.m_idMovie, screening.idScreening), Connection);
             int OK = command.ExecuteNonQuery();
             return OK;
         }
@@ -92,17 +117,10 @@ namespace Decoder_Cinema.Class
             return OK;
         }
 
-        public static IList<Screening> ShowRoom(MySqlConnection Connection)
+        public static MySqlDataAdapter ShowRoom(MySqlConnection Connection)
         {
-            List<Screening> lScreening = new List<Screening>();
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM screening"), Connection);
-            MySqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                Screening screening = new Screening(reader.GetInt32(0), reader.GetFloat(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5), reader.GetBoolean(6));
-                lScreening.Add(screening);
-            }
-            return lScreening;
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT idScreening as ID, sPrice as Precio, sStartTime as Hora_Inicio, sEndTime as Hora_Fin, Stock, Date as Fecha, Room_idRoom as Sala, mName as Pelicula FROM screening INNER JOIN movie ON Movie_idMovie = idMovie WHERE screening.Active = true", Connection);
+            return da;
         }
     }
 }

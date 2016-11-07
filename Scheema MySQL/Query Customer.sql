@@ -5,3 +5,5 @@
 #SELECT * FROM customer WHERE idCostumer =
 
 #UPDATE customer SET cName = '', cLastName = '', cAdress = '', cEmail = '', cTel = '', active = true WHERE idCustomer = 
+
+UPDATE customer SET active = true WHERE idCustomer > 1

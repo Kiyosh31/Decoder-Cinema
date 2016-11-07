@@ -25,7 +25,7 @@ namespace Decoder_Cinema
         private void buttonModify_Click(object sender, EventArgs e)
         {
             Connection.OpenConnection();
-            Class.Room room = new Class.Room(1, textBoxCapacity.Text);
+            Class.Room room = new Class.Room(int.Parse(idRoom), textBoxCapacity.Text);
             Class.Room.ModifyRoom(Connection.myConnection, room);
             Connection.CloseConnection();
 

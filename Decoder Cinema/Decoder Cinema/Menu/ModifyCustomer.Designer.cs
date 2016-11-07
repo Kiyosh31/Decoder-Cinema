@@ -48,21 +48,21 @@
             this.textBoxTel.Location = new System.Drawing.Point(112, 192);
             this.textBoxTel.Name = "textBoxTel";
             this.textBoxTel.Size = new System.Drawing.Size(168, 20);
-            this.textBoxTel.TabIndex = 52;
+            this.textBoxTel.TabIndex = 5;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(112, 160);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(168, 20);
-            this.textBoxEmail.TabIndex = 51;
+            this.textBoxEmail.TabIndex = 4;
             // 
             // textBoxAdress
             // 
             this.textBoxAdress.Location = new System.Drawing.Point(112, 129);
             this.textBoxAdress.Name = "textBoxAdress";
             this.textBoxAdress.Size = new System.Drawing.Size(168, 20);
-            this.textBoxAdress.TabIndex = 50;
+            this.textBoxAdress.TabIndex = 3;
             // 
             // label2
             // 
@@ -94,7 +94,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(54, 20);
-            this.textBoxID.TabIndex = 47;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -116,7 +116,7 @@
             this.buttonModify.Location = new System.Drawing.Point(0, 236);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(334, 25);
-            this.buttonModify.TabIndex = 40;
+            this.buttonModify.TabIndex = 6;
             this.buttonModify.Text = "Modificar";
             this.buttonModify.UseVisualStyleBackColor = true;
             this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
@@ -138,7 +138,7 @@
             this.textBoxLastName.Location = new System.Drawing.Point(112, 98);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(168, 20);
-            this.textBoxLastName.TabIndex = 45;
+            this.textBoxLastName.TabIndex = 2;
             // 
             // labelPassword
             // 
@@ -157,7 +157,7 @@
             this.textBoxName.Location = new System.Drawing.Point(112, 68);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(168, 20);
-            this.textBoxName.TabIndex = 42;
+            this.textBoxName.TabIndex = 1;
             // 
             // labelJobTitle
             // 

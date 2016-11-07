@@ -13,7 +13,7 @@ namespace Decoder_Cinema
 {
     public partial class AddMovie : Form
     {
-        string imagen;
+        string image;
         Class.Connection Connection;
 
         public AddMovie(Class.Connection Connection)
@@ -29,8 +29,8 @@ namespace Decoder_Cinema
             {
                 if(openfile.ShowDialog() == DialogResult.OK)
                 {
-                    imagen = openfile.FileName;
-                    pictureBox1.Image = Image.FromFile(imagen);
+                    image = openfile.FileName;
+                    pictureBox1.Image = Image.FromFile(image);
                 }
             }
             catch (Exception)
@@ -41,15 +41,15 @@ namespace Decoder_Cinema
 
         private void buttonAddMovie_Click(object sender, EventArgs e)
         {
-            if(textBoxDuration.Text == "" || textBoxName.Text == "" || textBoxSinopsis.Text == "" || imagen == "" || comboBoxCategory.Text == "" || comboBoxClasification.Text == "")
+            if(textBoxDuration.Text == "" || textBoxName.Text == "" || textBoxSinopsis.Text == "" || image == "" || comboBoxCategory.Text == "" || comboBoxClasification.Text == "")
             {
                 MessageBox.Show("Favor de llenar todos los campos");
             }
             else
             {
                 Connection.OpenConnection();
-                imagen = imagen.Replace(@"\", @"\\");
-                Class.Movie movie = new Class.Movie(1, textBoxName.Text, textBoxDuration.Text, comboBoxClasification.Text, comboBoxCategory.Text, textBoxSinopsis.Text, imagen);
+                image = image.Replace(@"\", @"\\");
+                Class.Movie movie = new Class.Movie(1, textBoxName.Text, textBoxDuration.Text, comboBoxClasification.Text, comboBoxCategory.Text, textBoxSinopsis.Text, image);
                 Class.Movie.AddMovie(Connection.myConnection, movie);
                 Connection.CloseConnection();
 

@@ -90,10 +90,10 @@
             // buttonSellTicket
             // 
             this.buttonSellTicket.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSellTicket.Location = new System.Drawing.Point(53, 166);
+            this.buttonSellTicket.Location = new System.Drawing.Point(363, 189);
             this.buttonSellTicket.Name = "buttonSellTicket";
-            this.buttonSellTicket.Size = new System.Drawing.Size(168, 62);
-            this.buttonSellTicket.TabIndex = 1;
+            this.buttonSellTicket.Size = new System.Drawing.Size(171, 62);
+            this.buttonSellTicket.TabIndex = 5;
             this.buttonSellTicket.Text = "Venta de boletos";
             this.buttonSellTicket.UseVisualStyleBackColor = true;
             // 
@@ -119,8 +119,8 @@
             this.groupBoxEmployee.Controls.Add(this.labelIDEmployee);
             this.groupBoxEmployee.Controls.Add(this.textBoxIDEmployee);
             this.groupBoxEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBoxEmployee.Location = new System.Drawing.Point(295, 147);
+            this.groupBoxEmployee.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxEmployee.Location = new System.Drawing.Point(23, 147);
             this.groupBoxEmployee.Name = "groupBoxEmployee";
             this.groupBoxEmployee.Size = new System.Drawing.Size(250, 146);
             this.groupBoxEmployee.TabIndex = 13;
@@ -134,7 +134,7 @@
             this.buttonAdminEmployee.Location = new System.Drawing.Point(39, 88);
             this.buttonAdminEmployee.Name = "buttonAdminEmployee";
             this.buttonAdminEmployee.Size = new System.Drawing.Size(171, 42);
-            this.buttonAdminEmployee.TabIndex = 18;
+            this.buttonAdminEmployee.TabIndex = 2;
             this.buttonAdminEmployee.Text = "Administrar";
             this.buttonAdminEmployee.UseVisualStyleBackColor = true;
             this.buttonAdminEmployee.Click += new System.EventHandler(this.buttonAdminEmployee_Click);
@@ -146,7 +146,7 @@
             this.buttonAddEmployee.Location = new System.Drawing.Point(39, 29);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
             this.buttonAddEmployee.Size = new System.Drawing.Size(171, 42);
-            this.buttonAddEmployee.TabIndex = 17;
+            this.buttonAddEmployee.TabIndex = 1;
             this.buttonAddEmployee.Text = "Registrar";
             this.buttonAddEmployee.UseVisualStyleBackColor = true;
             this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
@@ -195,10 +195,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(35, 443);
+            this.button1.Location = new System.Drawing.Point(714, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 31);
-            this.button1.TabIndex = 15;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Cerrar Sesion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -214,7 +214,7 @@
             this.groupBoxCustomer.Controls.Add(this.textBox1);
             this.groupBoxCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCustomer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxCustomer.Location = new System.Drawing.Point(599, 147);
+            this.groupBoxCustomer.Location = new System.Drawing.Point(618, 147);
             this.groupBoxCustomer.Name = "groupBoxCustomer";
             this.groupBoxCustomer.Size = new System.Drawing.Size(250, 146);
             this.groupBoxCustomer.TabIndex = 19;
@@ -228,7 +228,7 @@
             this.buttonAdminCostumer.Location = new System.Drawing.Point(39, 88);
             this.buttonAdminCostumer.Name = "buttonAdminCostumer";
             this.buttonAdminCostumer.Size = new System.Drawing.Size(171, 42);
-            this.buttonAdminCostumer.TabIndex = 18;
+            this.buttonAdminCostumer.TabIndex = 9;
             this.buttonAdminCostumer.Text = "Administrar";
             this.buttonAdminCostumer.UseVisualStyleBackColor = true;
             this.buttonAdminCostumer.Click += new System.EventHandler(this.buttonAdminCostumer_Click);
@@ -240,7 +240,7 @@
             this.buttonAddCustomer.Location = new System.Drawing.Point(39, 29);
             this.buttonAddCustomer.Name = "buttonAddCustomer";
             this.buttonAddCustomer.Size = new System.Drawing.Size(171, 42);
-            this.buttonAddCustomer.TabIndex = 17;
+            this.buttonAddCustomer.TabIndex = 8;
             this.buttonAddCustomer.Text = "Registrar";
             this.buttonAddCustomer.UseVisualStyleBackColor = true;
             this.buttonAddCustomer.Click += new System.EventHandler(this.buttonAddCustomer_Click);
@@ -297,7 +297,7 @@
             this.groupBoxRoom.Controls.Add(this.textBox2);
             this.groupBoxRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxRoom.Location = new System.Drawing.Point(295, 310);
+            this.groupBoxRoom.Location = new System.Drawing.Point(324, 310);
             this.groupBoxRoom.Name = "groupBoxRoom";
             this.groupBoxRoom.Size = new System.Drawing.Size(250, 146);
             this.groupBoxRoom.TabIndex = 19;
@@ -311,7 +311,7 @@
             this.buttonAdminRoom.Location = new System.Drawing.Point(39, 88);
             this.buttonAdminRoom.Name = "buttonAdminRoom";
             this.buttonAdminRoom.Size = new System.Drawing.Size(171, 42);
-            this.buttonAdminRoom.TabIndex = 18;
+            this.buttonAdminRoom.TabIndex = 7;
             this.buttonAdminRoom.Text = "Administrar";
             this.buttonAdminRoom.UseVisualStyleBackColor = true;
             this.buttonAdminRoom.Click += new System.EventHandler(this.buttonAdminRoom_Click);
@@ -323,7 +323,7 @@
             this.buttonAddRoom.Location = new System.Drawing.Point(39, 29);
             this.buttonAddRoom.Name = "buttonAddRoom";
             this.buttonAddRoom.Size = new System.Drawing.Size(171, 42);
-            this.buttonAddRoom.TabIndex = 17;
+            this.buttonAddRoom.TabIndex = 6;
             this.buttonAddRoom.Text = "Nueva";
             this.buttonAddRoom.UseVisualStyleBackColor = true;
             this.buttonAddRoom.Click += new System.EventHandler(this.buttonAddRoom_Click);
@@ -380,7 +380,7 @@
             this.groupBoxMovie.Controls.Add(this.textBox3);
             this.groupBoxMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMovie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxMovie.Location = new System.Drawing.Point(599, 310);
+            this.groupBoxMovie.Location = new System.Drawing.Point(618, 310);
             this.groupBoxMovie.Name = "groupBoxMovie";
             this.groupBoxMovie.Size = new System.Drawing.Size(250, 146);
             this.groupBoxMovie.TabIndex = 19;
@@ -394,9 +394,10 @@
             this.buttonAdminMovie.Location = new System.Drawing.Point(39, 88);
             this.buttonAdminMovie.Name = "buttonAdminMovie";
             this.buttonAdminMovie.Size = new System.Drawing.Size(171, 42);
-            this.buttonAdminMovie.TabIndex = 18;
+            this.buttonAdminMovie.TabIndex = 11;
             this.buttonAdminMovie.Text = "Administrar";
             this.buttonAdminMovie.UseVisualStyleBackColor = true;
+            this.buttonAdminMovie.Click += new System.EventHandler(this.buttonAdminMovie_Click);
             // 
             // buttonAddMovie
             // 
@@ -405,7 +406,7 @@
             this.buttonAddMovie.Location = new System.Drawing.Point(39, 29);
             this.buttonAddMovie.Name = "buttonAddMovie";
             this.buttonAddMovie.Size = new System.Drawing.Size(171, 42);
-            this.buttonAddMovie.TabIndex = 17;
+            this.buttonAddMovie.TabIndex = 10;
             this.buttonAddMovie.Text = "Nueva";
             this.buttonAddMovie.UseVisualStyleBackColor = true;
             this.buttonAddMovie.Click += new System.EventHandler(this.buttonAddMovie_Click);
@@ -462,7 +463,7 @@
             this.groupBoxScreening.Controls.Add(this.textBox4);
             this.groupBoxScreening.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxScreening.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBoxScreening.Location = new System.Drawing.Point(14, 253);
+            this.groupBoxScreening.Location = new System.Drawing.Point(23, 310);
             this.groupBoxScreening.Name = "groupBoxScreening";
             this.groupBoxScreening.Size = new System.Drawing.Size(250, 146);
             this.groupBoxScreening.TabIndex = 19;
@@ -476,9 +477,10 @@
             this.buttonAdminScreening.Location = new System.Drawing.Point(39, 88);
             this.buttonAdminScreening.Name = "buttonAdminScreening";
             this.buttonAdminScreening.Size = new System.Drawing.Size(171, 42);
-            this.buttonAdminScreening.TabIndex = 18;
+            this.buttonAdminScreening.TabIndex = 4;
             this.buttonAdminScreening.Text = "Administrar";
             this.buttonAdminScreening.UseVisualStyleBackColor = true;
+            this.buttonAdminScreening.Click += new System.EventHandler(this.buttonAdminScreening_Click);
             // 
             // buttonAddScreening
             // 
@@ -487,9 +489,10 @@
             this.buttonAddScreening.Location = new System.Drawing.Point(39, 29);
             this.buttonAddScreening.Name = "buttonAddScreening";
             this.buttonAddScreening.Size = new System.Drawing.Size(171, 42);
-            this.buttonAddScreening.TabIndex = 17;
+            this.buttonAddScreening.TabIndex = 3;
             this.buttonAddScreening.Text = "Establecer";
             this.buttonAddScreening.UseVisualStyleBackColor = true;
+            this.buttonAddScreening.Click += new System.EventHandler(this.buttonAddScreening_Click);
             // 
             // button12
             // 

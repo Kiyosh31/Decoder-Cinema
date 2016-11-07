@@ -49,6 +49,12 @@ namespace Decoder_Cinema
             addroom.ShowDialog();
         }
 
+        private void buttonAddScreening_Click(object sender, EventArgs e)
+        {
+            AddScreening addscreening = new AddScreening(Connection);
+            addscreening.ShowDialog();
+        }
+
         private void buttonAdminEmployee_Click(object sender, EventArgs e)
         {
             AdminEmployee adminemployee = new AdminEmployee(Connection);
@@ -60,13 +66,33 @@ namespace Decoder_Cinema
         private void buttonAdminCostumer_Click(object sender, EventArgs e)
         {
             AdminCustomer admincustomer = new AdminCustomer(Connection);
+            this.Hide();
             admincustomer.ShowDialog();
+            this.Show();
         }
 
         private void buttonAdminRoom_Click(object sender, EventArgs e)
         {
             AdminRoom adminroom = new AdminRoom(Connection);
+            this.Hide();
             adminroom.ShowDialog();
+            this.Show();
+        }
+
+        private void buttonAdminMovie_Click(object sender, EventArgs e)
+        {
+            AdminMovie adminmovie = new AdminMovie(Connection);
+            this.Hide();
+            adminmovie.ShowDialog();
+            this.Show();
+        }
+
+        private void buttonAdminScreening_Click(object sender, EventArgs e)
+        {
+            AdminScreening adminscreening = new AdminScreening(Connection);
+            this.Hide();
+            adminscreening.ShowDialog();
+            this.Show();
         }
     }
 }

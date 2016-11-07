@@ -41,7 +41,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(54, 20);
-            this.textBoxID.TabIndex = 38;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -72,7 +72,7 @@
             this.textBoxCapacity.Location = new System.Drawing.Point(161, 85);
             this.textBoxCapacity.Name = "textBoxCapacity";
             this.textBoxCapacity.Size = new System.Drawing.Size(45, 20);
-            this.textBoxCapacity.TabIndex = 36;
+            this.textBoxCapacity.TabIndex = 1;
             // 
             // buttonAddRoom
             // 
@@ -82,7 +82,7 @@
             this.buttonAddRoom.Location = new System.Drawing.Point(0, 167);
             this.buttonAddRoom.Name = "buttonAddRoom";
             this.buttonAddRoom.Size = new System.Drawing.Size(284, 25);
-            this.buttonAddRoom.TabIndex = 39;
+            this.buttonAddRoom.TabIndex = 2;
             this.buttonAddRoom.Text = "Registrar Sala";
             this.buttonAddRoom.UseVisualStyleBackColor = true;
             this.buttonAddRoom.Click += new System.EventHandler(this.buttonAddRoom_Click);

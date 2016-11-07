@@ -49,7 +49,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(54, 20);
-            this.textBoxID.TabIndex = 34;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -71,7 +71,7 @@
             this.buttonAddCustomer.Location = new System.Drawing.Point(0, 236);
             this.buttonAddCustomer.Name = "buttonAddCustomer";
             this.buttonAddCustomer.Size = new System.Drawing.Size(334, 25);
-            this.buttonAddCustomer.TabIndex = 26;
+            this.buttonAddCustomer.TabIndex = 6;
             this.buttonAddCustomer.Text = "Registrar Cliente";
             this.buttonAddCustomer.UseVisualStyleBackColor = true;
             this.buttonAddCustomer.Click += new System.EventHandler(this.buttonAddCustomer_Click);
@@ -93,7 +93,7 @@
             this.textBoxLastName.Location = new System.Drawing.Point(112, 86);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(168, 20);
-            this.textBoxLastName.TabIndex = 32;
+            this.textBoxLastName.TabIndex = 2;
             // 
             // labelPassword
             // 
@@ -112,7 +112,7 @@
             this.textBoxName.Location = new System.Drawing.Point(112, 56);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(168, 20);
-            this.textBoxName.TabIndex = 29;
+            this.textBoxName.TabIndex = 1;
             // 
             // labelJobTitle
             // 
@@ -155,21 +155,21 @@
             this.textBoxAdress.Location = new System.Drawing.Point(112, 117);
             this.textBoxAdress.Name = "textBoxAdress";
             this.textBoxAdress.Size = new System.Drawing.Size(168, 20);
-            this.textBoxAdress.TabIndex = 37;
+            this.textBoxAdress.TabIndex = 3;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(112, 148);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(168, 20);
-            this.textBoxEmail.TabIndex = 38;
+            this.textBoxEmail.TabIndex = 4;
             // 
             // textBoxTel
             // 
             this.textBoxTel.Location = new System.Drawing.Point(112, 180);
             this.textBoxTel.Name = "textBoxTel";
             this.textBoxTel.Size = new System.Drawing.Size(168, 20);
-            this.textBoxTel.TabIndex = 39;
+            this.textBoxTel.TabIndex = 5;
             // 
             // AddCustomer
             // 
@@ -191,6 +191,7 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelJobTitle);
             this.Name = "AddCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCustomer";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             this.ResumeLayout(false);

@@ -45,7 +45,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(81, 20);
-            this.textBoxID.TabIndex = 25;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -68,7 +68,7 @@
             this.comboBoxJobPosition.Location = new System.Drawing.Point(132, 141);
             this.comboBoxJobPosition.Name = "comboBoxJobPosition";
             this.comboBoxJobPosition.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxJobPosition.TabIndex = 18;
+            this.comboBoxJobPosition.TabIndex = 4;
             // 
             // buttonAddEmployee
             // 
@@ -78,7 +78,7 @@
             this.buttonAddEmployee.Location = new System.Drawing.Point(0, 181);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
             this.buttonAddEmployee.Size = new System.Drawing.Size(351, 25);
-            this.buttonAddEmployee.TabIndex = 17;
+            this.buttonAddEmployee.TabIndex = 5;
             this.buttonAddEmployee.Text = "Registrar Empleado";
             this.buttonAddEmployee.UseVisualStyleBackColor = true;
             this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
@@ -100,7 +100,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(132, 101);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPassword.TabIndex = 23;
+            this.textBoxPassword.TabIndex = 3;
             // 
             // labelPassword
             // 
@@ -119,7 +119,7 @@
             this.textBoxUserName.Location = new System.Drawing.Point(132, 59);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(209, 20);
-            this.textBoxUserName.TabIndex = 20;
+            this.textBoxUserName.TabIndex = 2;
             // 
             // labelJobTitle
             // 

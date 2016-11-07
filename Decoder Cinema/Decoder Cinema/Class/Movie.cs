@@ -78,9 +78,21 @@ namespace Decoder_Cinema.Class
             return OK;
         }
 
+        public static Movie SearchMovie(MySqlConnection Connection, string idMovie)
+        {
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM movie WHERE idMovie = {0} AND active = true", idMovie), Connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Movie movie = new Movie(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6));
+                return movie;
+            }
+            Movie e = null; return e;
+        }
+
         public static int ModifyMovie(MySqlConnection Connection, Movie movie)
         {
-            MySqlCommand command = new MySqlCommand(String.Format("UPDATE movie SET mName = '{0}', mClasification = '{1}', mCategory = '{2}', active = true WHERE idMovie = {3}", movie.name, movie.clasification, movie.category, movie.idMovie), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("UPDATE movie SET mName = '{0}', mDuration = '{1}', mClasification = '{2}', mCategory = '{3}', mSinopsis = '{4}', mUrl = '{5}' WHERE idMovie = {6}", movie.name, movie.duration, movie.clasification, movie.category, movie.sinopsis, movie.url, movie.idMovie), Connection);
             int OK = command.ExecuteNonQuery();
             return OK;
         }
@@ -95,7 +107,7 @@ namespace Decoder_Cinema.Class
         public static IList<Movie> ShowMovie(MySqlConnection Connection)
         {
             List<Movie> lMovie = new List<Movie>();
-            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM movie"), Connection);
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT * FROM movie WHERE active = true"), Connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {

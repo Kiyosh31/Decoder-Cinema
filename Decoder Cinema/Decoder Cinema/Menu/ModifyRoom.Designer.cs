@@ -43,7 +43,7 @@
             this.buttonModify.Location = new System.Drawing.Point(0, 167);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(284, 25);
-            this.buttonModify.TabIndex = 44;
+            this.buttonModify.TabIndex = 2;
             this.buttonModify.Text = "Modificar";
             this.buttonModify.UseVisualStyleBackColor = true;
             this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
@@ -54,7 +54,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(54, 20);
-            this.textBoxID.TabIndex = 43;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -85,7 +85,7 @@
             this.textBoxCapacity.Location = new System.Drawing.Point(160, 95);
             this.textBoxCapacity.Name = "textBoxCapacity";
             this.textBoxCapacity.Size = new System.Drawing.Size(45, 20);
-            this.textBoxCapacity.TabIndex = 41;
+            this.textBoxCapacity.TabIndex = 1;
             // 
             // ModifyRoom
             // 

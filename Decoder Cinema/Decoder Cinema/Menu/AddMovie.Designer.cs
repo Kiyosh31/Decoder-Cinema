@@ -49,11 +49,11 @@
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(56, 6);
+            this.textBoxID.Location = new System.Drawing.Point(57, 8);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(54, 20);
-            this.textBoxID.TabIndex = 47;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -61,7 +61,7 @@
             this.labelIDE.BackColor = System.Drawing.Color.Transparent;
             this.labelIDE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIDE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelIDE.Location = new System.Drawing.Point(31, 10);
+            this.labelIDE.Location = new System.Drawing.Point(32, 12);
             this.labelIDE.Name = "labelIDE";
             this.labelIDE.Size = new System.Drawing.Size(19, 12);
             this.labelIDE.TabIndex = 46;
@@ -75,7 +75,7 @@
             this.buttonAddMovie.Location = new System.Drawing.Point(0, 333);
             this.buttonAddMovie.Name = "buttonAddMovie";
             this.buttonAddMovie.Size = new System.Drawing.Size(626, 25);
-            this.buttonAddMovie.TabIndex = 40;
+            this.buttonAddMovie.TabIndex = 7;
             this.buttonAddMovie.Text = "Agregar Pelicula";
             this.buttonAddMovie.UseVisualStyleBackColor = true;
             this.buttonAddMovie.Click += new System.EventHandler(this.buttonAddMovie_Click);
@@ -86,7 +86,7 @@
             this.labelUserName.BackColor = System.Drawing.Color.Transparent;
             this.labelUserName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelUserName.Location = new System.Drawing.Point(45, 63);
+            this.labelUserName.Location = new System.Drawing.Point(46, 65);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(49, 12);
             this.labelUserName.TabIndex = 41;
@@ -98,7 +98,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPassword.Location = new System.Drawing.Point(31, 167);
+            this.labelPassword.Location = new System.Drawing.Point(32, 169);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(63, 12);
             this.labelPassword.TabIndex = 43;
@@ -106,10 +106,10 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(125, 59);
+            this.textBoxName.Location = new System.Drawing.Point(126, 61);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(168, 20);
-            this.textBoxName.TabIndex = 42;
+            this.textBoxName.TabIndex = 1;
             // 
             // labelJobTitle
             // 
@@ -117,7 +117,7 @@
             this.labelJobTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelJobTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJobTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelJobTitle.Location = new System.Drawing.Point(14, 213);
+            this.labelJobTitle.Location = new System.Drawing.Point(15, 215);
             this.labelJobTitle.Name = "labelJobTitle";
             this.labelJobTitle.Size = new System.Drawing.Size(80, 12);
             this.labelJobTitle.TabIndex = 44;
@@ -126,7 +126,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(356, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(357, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,10 +143,10 @@
             "Terror",
             "Ciencia Ficción",
             "Documental"});
-            this.comboBoxCategory.Location = new System.Drawing.Point(125, 163);
+            this.comboBoxCategory.Location = new System.Drawing.Point(126, 165);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategory.TabIndex = 54;
+            this.comboBoxCategory.TabIndex = 3;
             // 
             // comboBoxClasification
             // 
@@ -158,10 +158,10 @@
             "B-15",
             "C",
             "D"});
-            this.comboBoxClasification.Location = new System.Drawing.Point(125, 209);
+            this.comboBoxClasification.Location = new System.Drawing.Point(126, 211);
             this.comboBoxClasification.Name = "comboBoxClasification";
             this.comboBoxClasification.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxClasification.TabIndex = 55;
+            this.comboBoxClasification.TabIndex = 4;
             // 
             // label1
             // 
@@ -169,7 +169,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(38, 115);
+            this.label1.Location = new System.Drawing.Point(39, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 12);
             this.label1.TabIndex = 56;
@@ -181,7 +181,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(38, 265);
+            this.label3.Location = new System.Drawing.Point(39, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 12);
             this.label3.TabIndex = 58;
@@ -189,25 +189,25 @@
             // 
             // textBoxSinopsis
             // 
-            this.textBoxSinopsis.Location = new System.Drawing.Point(125, 265);
+            this.textBoxSinopsis.Location = new System.Drawing.Point(126, 267);
             this.textBoxSinopsis.Multiline = true;
             this.textBoxSinopsis.Name = "textBoxSinopsis";
             this.textBoxSinopsis.Size = new System.Drawing.Size(457, 51);
-            this.textBoxSinopsis.TabIndex = 59;
+            this.textBoxSinopsis.TabIndex = 6;
             // 
             // textBoxDuration
             // 
-            this.textBoxDuration.Location = new System.Drawing.Point(125, 111);
+            this.textBoxDuration.Location = new System.Drawing.Point(126, 113);
             this.textBoxDuration.Name = "textBoxDuration";
             this.textBoxDuration.Size = new System.Drawing.Size(121, 20);
-            this.textBoxDuration.TabIndex = 60;
+            this.textBoxDuration.TabIndex = 2;
             // 
             // buttonSelectImage
             // 
-            this.buttonSelectImage.Location = new System.Drawing.Point(535, 207);
+            this.buttonSelectImage.Location = new System.Drawing.Point(536, 209);
             this.buttonSelectImage.Name = "buttonSelectImage";
             this.buttonSelectImage.Size = new System.Drawing.Size(25, 23);
-            this.buttonSelectImage.TabIndex = 61;
+            this.buttonSelectImage.TabIndex = 5;
             this.buttonSelectImage.Text = "...";
             this.buttonSelectImage.UseVisualStyleBackColor = true;
             this.buttonSelectImage.Click += new System.EventHandler(this.buttonSelectImage_Click);

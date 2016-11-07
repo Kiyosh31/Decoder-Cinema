@@ -45,7 +45,7 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.ReadOnly = true;
             this.textBoxID.Size = new System.Drawing.Size(81, 20);
-            this.textBoxID.TabIndex = 34;
+            this.textBoxID.TabIndex = 100;
             // 
             // labelIDE
             // 
@@ -68,7 +68,7 @@
             this.comboBoxJobPosition.Location = new System.Drawing.Point(132, 144);
             this.comboBoxJobPosition.Name = "comboBoxJobPosition";
             this.comboBoxJobPosition.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxJobPosition.TabIndex = 27;
+            this.comboBoxJobPosition.TabIndex = 3;
             // 
             // buttonModifyEmployee
             // 
@@ -78,7 +78,7 @@
             this.buttonModifyEmployee.Location = new System.Drawing.Point(0, 181);
             this.buttonModifyEmployee.Name = "buttonModifyEmployee";
             this.buttonModifyEmployee.Size = new System.Drawing.Size(351, 25);
-            this.buttonModifyEmployee.TabIndex = 26;
+            this.buttonModifyEmployee.TabIndex = 4;
             this.buttonModifyEmployee.Text = "Modificar";
             this.buttonModifyEmployee.UseVisualStyleBackColor = true;
             this.buttonModifyEmployee.Click += new System.EventHandler(this.buttonModifyEmployee_Click);
@@ -100,7 +100,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(132, 104);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPassword.TabIndex = 32;
+            this.textBoxPassword.TabIndex = 2;
             // 
             // labelPassword
             // 
@@ -119,7 +119,7 @@
             this.textBoxUserName.Location = new System.Drawing.Point(132, 62);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(209, 20);
-            this.textBoxUserName.TabIndex = 29;
+            this.textBoxUserName.TabIndex = 1;
             // 
             // labelJobTitle
             // 
