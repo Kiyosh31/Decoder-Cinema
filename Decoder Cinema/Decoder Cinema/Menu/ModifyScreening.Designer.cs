@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyScreening));
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
             this.buttonChooseM = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
@@ -260,8 +261,10 @@
             this.Controls.Add(this.labelIDE);
             this.Controls.Add(this.label);
             this.Controls.Add(this.textBoxPrice);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModifyScreening";
-            this.Text = "ModifyScreening";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar Función";
             this.Load += new System.EventHandler(this.ModifyScreening_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

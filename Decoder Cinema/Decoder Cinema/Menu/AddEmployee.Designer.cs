@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployee));
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelIDE = new System.Windows.Forms.Label();
             this.comboBoxJobPosition = new System.Windows.Forms.ComboBox();
@@ -148,9 +149,10 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelJobTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddEmployee";
+            this.Text = "Nuevo Empleado";
             this.ResumeLayout(false);
             this.PerformLayout();
 

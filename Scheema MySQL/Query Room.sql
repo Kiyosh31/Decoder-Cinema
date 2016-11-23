@@ -1,6 +1,6 @@
 #INSERT INTO room(Capacity, Availability, Active) VALUES() 
 
-#SELECT * FROM room
+SELECT * FROM sale
 
 #SELECT * FROM room WHERE idRoom =
 

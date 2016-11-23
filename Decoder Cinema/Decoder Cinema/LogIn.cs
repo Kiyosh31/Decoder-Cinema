@@ -60,8 +60,11 @@ namespace Decoder_Cinema
             {
                 if (reader.GetInt32(3) == 1)
                 {
-                    AdminMenu adminmenu = new AdminMenu();
                     Connection.CloseConnection();
+                    Connection.OpenConnection();
+                    Class.Employee employee = Class.Employee.SearchEmployee(Connection.myConnection, textBoxUserName.Text);
+                    Connection.CloseConnection();
+                    AdminMenu adminmenu = new AdminMenu(employee);
                     this.Hide();
                     adminmenu.ShowDialog();
                     this.Show();

@@ -94,8 +94,9 @@
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminMovie";
-            this.Text = "AdminMovie";
+            this.Text = "Administrar Películas";
             this.Load += new System.EventHandler(this.AdminMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

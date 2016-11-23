@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddScreeningMovie));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonSeleccionar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -78,8 +79,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonSeleccionar);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddScreeningMovie";
-            this.Text = "AddScreeningMovie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Seleccionar Pelicula";
             this.Load += new System.EventHandler(this.AdminScreeningMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

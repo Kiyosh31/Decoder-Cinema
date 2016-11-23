@@ -87,5 +87,12 @@ namespace Decoder_Cinema.Class
             }
             return lSale;
         }
+
+        public static MySqlDataReader MaxID(MySqlConnection Connection)
+        {
+            MySqlCommand command = new MySqlCommand(String.Format("SELECT MAX(idSale) AS idSale FROM sale"), Connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            return reader;
+        }
     }
 }

@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Decoder_Cinema.Class
 {
-    class Employee
+    public class Employee
     {
         int idEmployee;
         string name;

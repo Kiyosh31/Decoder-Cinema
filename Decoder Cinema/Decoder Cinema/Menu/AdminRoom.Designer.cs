@@ -81,8 +81,9 @@
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminRoom";
-            this.Text = "AdminRoom";
+            this.Text = "Administrar Salas";
             this.Load += new System.EventHandler(this.AdminRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

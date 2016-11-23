@@ -53,7 +53,7 @@ namespace Decoder_Cinema
                 Class.Movie.AddMovie(Connection.myConnection, movie);
                 Connection.CloseConnection();
 
-                MessageBox.Show("Cliente registrado\nExitosamente");
+                MessageBox.Show("Película registrada\nExitosamente");
                 this.Close();
             }
         }

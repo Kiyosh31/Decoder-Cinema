@@ -38,3 +38,5 @@ C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AddScreeningMovie.resources
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.AdminScreening.resources
 C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ModifyScreening.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.SaleTicket.resources
+C:\Users\kyo_9\Documents\GitHub\DecoderCinema\Decoder Cinema\Decoder Cinema\obj\Debug\Decoder_Cinema.ReportSale.resources

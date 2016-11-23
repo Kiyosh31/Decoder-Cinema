@@ -233,8 +233,10 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelJobTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModifyMovie";
-            this.Text = "ModifyMovie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar Película";
             this.Load += new System.EventHandler(this.ModifyMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

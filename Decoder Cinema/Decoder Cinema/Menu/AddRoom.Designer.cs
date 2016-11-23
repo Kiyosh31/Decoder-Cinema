@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoom));
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelIDE = new System.Windows.Forms.Label();
             this.labelUserName = new System.Windows.Forms.Label();
@@ -98,8 +99,10 @@
             this.Controls.Add(this.labelIDE);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.textBoxCapacity);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddRoom";
-            this.Text = "AddRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registrar Sala";
             this.ResumeLayout(false);
             this.PerformLayout();
 

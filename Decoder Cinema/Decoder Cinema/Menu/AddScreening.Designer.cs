@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddScreening));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelIDE = new System.Windows.Forms.Label();
@@ -262,9 +263,10 @@
             this.Controls.Add(this.labelIDE);
             this.Controls.Add(this.label);
             this.Controls.Add(this.textBoxPrice);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddScreening";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddScreening";
+            this.Text = "Nueva Función";
             this.Load += new System.EventHandler(this.AddScreening_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyCustomer));
             this.textBoxTel = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxAdress = new System.Windows.Forms.TextBox();
@@ -190,8 +191,10 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelJobTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModifyCustomer";
-            this.Text = "ModifyCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar Cliente";
             this.Load += new System.EventHandler(this.ModifyCustomer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
