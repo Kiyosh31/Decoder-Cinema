@@ -1,7 +1,7 @@
 # DecoderCinema
 System for a basic administration of a cinema using c# (front end) and MySQL (database)
 
-#Descripcion
+#Description
 This project the system has an layaway seats with graphical interface when the ticket is purchased, 
 will also have a candy bar where guests can buy anything you want and at the end of the purchase will be added automatically all.
 
