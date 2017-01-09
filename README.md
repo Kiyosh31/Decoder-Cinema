@@ -18,7 +18,3 @@ Decoder Cinema 1.0
 #Developers
 * David Garcia (myself).
 * Daniel Mitchel.
-* Kevin Garcia.
-* Maria Villalobos.
-* Jorge Pimienta.
-* Andrick Almanza
